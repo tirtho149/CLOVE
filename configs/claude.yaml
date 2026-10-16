@@ -1,0 +1,43 @@
+# CLOVE soybean pilot on Claude via Claude Code headless (`claude -p`).
+# Same data, manifest, class orders, budgets and statistics as pilot.yaml — only the
+# frozen backbone changes. Run ids differ (config hash), so results never mix.
+#   python -m clove.cli smoke    --config configs/claude.yaml
+#   python -m clove.cli estimate --config configs/claude.yaml
+#   python -m clove.cli run      --config configs/claude.yaml --methods names,sage0,append,fresh,prism
+include: [pilot.yaml]
+
+run_name: soybean_pilot_claude
+
+model:
+  backend: claude_headless
+  model_id: claude-sonnet-5-5           # recorded in every record / cache key
+  tokenizer: approx                      # Claude tokenizer is not public: b_KB counted approximately
+  require_exact_tokenizer: false         #   (prompt/output tokens are exact, from API usage)
+  timeout_s: 180
+  max_retries: 2
+  claude:
+    bin: claude
+    model: claude-sonnet-5-5             # e.g. claude-haiku-5-5 | claude-sonnet-5-5 | claude-opus-5-5
+    image_mode: inline                   # inline (no tools, base64 image) | read_tool (SAGE-style, audited)
+    effort: low                          # keeps hidden thinking (counted in output tokens) small
+    strip_api_key: true                  # use the logged-in Claude account, as SAGE's runner did
+    enforce_output_cap: true             # sets CLAUDE_CODE_MAX_OUTPUT_TOKENS = max_new_tokens (best effort)
+    prompt_caching: false                # 2026-10-16 O1_r0: cache-read share 0.01 -> writes at 2x input price
+    extra_args: []
+
+budgets:
+  # Logged departure from matched caps: the SAGE k=0 reference prompt asks for reasoning
+  # before its JSON, which cannot fit b_out=96 (31/34 calls hit OUTPUT_CAP_EXCEEDED in the
+  # 2026-10-16 Sonnet smoke). All CLOVE methods keep b_out=96.
+  method_max_new_tokens: {sage0: 512}
+
+gate:
+  mode: argmax_only                      # no logprobs: unknown = explicit "0 = none of these" choice
+
+retrieval:
+  visual: none                           # set siglip (needs torch+transformers) to make r binding
+
+compute:
+  parallel: 8                            # concurrent claude -p subprocesses
+  max_usd: 50.0                          # hard stop; `estimate` blocks if the projection exceeds it
+  max_calls: 60000

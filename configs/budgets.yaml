@@ -1,0 +1,16 @@
+# Token budgets. kb_tokens = retrieved KB evidence (b_KB); r = candidate classes;
+# max_new_tokens = b_out; k_img is fixed at 0 everywhere and is not configurable.
+budgets:
+  primary: b512_r4_o96
+  grid:
+    b512_r4_o96:  {kb_tokens: 512,  r: 4, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    # sweep (Gate 5, only after the primary evaluation is stable)
+    b128_r4_o96:  {kb_tokens: 128,  r: 4, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b256_r4_o96:  {kb_tokens: 256,  r: 4, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b1024_r4_o96: {kb_tokens: 1024, r: 4, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b512_r1_o96:  {kb_tokens: 512,  r: 1, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b512_r2_o96:  {kb_tokens: 512,  r: 2, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b512_r8_o96:  {kb_tokens: 512,  r: 8, max_new_tokens: 96, instruction_tokens: 180, excerpt_tokens: 96}
+    b512_r4_o48:  {kb_tokens: 512,  r: 4, max_new_tokens: 48, instruction_tokens: 180, excerpt_tokens: 96}
+    b512_r4_o192: {kb_tokens: 512,  r: 4, max_new_tokens: 192, instruction_tokens: 180, excerpt_tokens: 96}
+  sweep_enabled: false

@@ -1,0 +1,19 @@
+# Pre-registered statistics. `clove run` freezes this block (hashed) into
+# artifacts/<run>/preregistration.json before the first prediction is written.
+stats:
+  bootstrap: 10000
+  ci: 0.95
+  seed: 12345
+  noninferiority_margin: 0.02        # -2 pp on old-class accuracy (justify from dev power analysis)
+  primary:
+    metric: old_class_macro_accuracy
+    treatment: prism
+    control: append
+    episodes: post_acquisition       # all t >= 1, averaged
+  primary_family:                    # Holm-corrected confirmatory family
+    - [prism, append]
+  exploratory_family:                # BH-FDR
+    - [prism, fresh]
+    - [append, fresh]
+    - [sage0, names]
+    - [prism, sage0]

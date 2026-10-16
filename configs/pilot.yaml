@@ -1,0 +1,125 @@
+# CLOVE soybean-only pilot — controlling configuration.
+# Relative paths resolve against THIS file's directory. Nothing under the SAGE trees is
+# ever written; CLOVE writes only to `paths.artifacts`.
+include: [budgets.yaml, stats.yaml]
+
+run_name: soybean_pilot
+crop: soybean
+
+paths:
+  # WACV frozen manifest (test ids + per-class ref ids, content-addressed pool)
+  wacv_manifest: ../../sage-nova-mirror/wacv2027_nova/data/manifest/soybean.json
+  # WACV KB used by SAGE k=0 (Visual Description per class)
+  kb_xlsx: ../../sage-nova-mirror/wacv2027_kb/soybean/internet.xlsx
+  # verbatim {url, quote} per class
+  provenance_json: ../../sage-nova-mirror/wacv2027_nova/data/part_index/soybean_sources.json
+  # GitHub SAGE registry (value/url/quote per field + look_alikes). Clone
+  # https://github.com/tirtho149/SAGE next to this repo, or point elsewhere.
+  registry_json: ../../SAGE/disease_registry/outputs/Soybean/final_registry.json
+  prepared_dataset: null          # e.g. ../../SAGE/Prepared_Dataset (adds its images)
+  image_dirs:
+    - ../../sage-nova-mirror/dup_audit/scale_images
+    - ../../sage-wacv2027/data/images
+  image_meta_csv: null            # image_id,source_dataset,group_id  (enables source-OOD)
+  hard_pairs_csv: null            # class_a,class_b,weight (independent confusable list)
+  artifacts: ../artifacts
+
+classes:
+  # Spelling variants across SAGE files -> canonical WACV class id. Case/underscore
+  # differences are unified automatically; only true synonyms are listed. REVIEW these:
+  # each is a scientific decision recorded in the audit.
+  aliases:
+    Soybean_rust: Rust
+    Soybean_Rust: Rust
+    Septoria_brown_spot: Brown_Spot
+    Green_stem_disorder: Green_Stem
+    Fusarium: Fusarium_Disease
+    Rhizoctonia_Damping-Off: Rhizoctonia
+  # Phomopsis is NOT merged into Diaporthe (same complex, different SAGE classes).
+  extra_canonical: []
+  exclude: []
+  hold_out: []                    # admissible classes kept as never-admitted unknowns
+  min_test_images: 10
+  min_claims: 2
+  mention_exempt: []              # extra regexes never treated as class mentions
+
+kb:
+  sources: [registry_json, provenance_json, kb_xlsx]
+
+dev:
+  use_manifest_refs: true         # SAGE ref images -> dev split (NEVER shown to the model)
+  max_per_class: 8
+
+dedup:
+  near_dup_hamming: 6
+
+schedule: {initial: 10, batch: 5, stages: 4, min_initial: 4, min_batch: 2}
+
+orders:
+  random_orders: 3
+  confusable: true
+  reversed: true
+  seed: 2026
+  hard_pair_source: registry_look_alikes   # registry_look_alikes | csv | kb_similarity_proxy
+
+model:
+  backend: openai_compat          # openai_compat (vLLM server) | transformers | mock (tests only)
+  model_id: Qwen/Qwen3-VL-32B-Instruct
+  revision: null
+  base_url: http://localhost:8000
+  api_key_env: null
+  tokenizer: Qwen/Qwen3-VL-32B-Instruct
+  require_exact_tokenizer: true
+  temperature: 0.0
+  top_logprobs: 10
+  timeout_s: 180
+  max_retries: 2
+
+retrieval:
+  visual: siglip                  # siglip | precomputed | none  (none => all active classes are candidates)
+  siglip_model: google/siglip-so400m-patch14-384
+  precomputed_scores: null
+  device: auto
+
+gate:
+  mode: threshold                 # threshold | argmax_only
+  target_known_tpr: 0.95
+  calibrate: per_episode          # per_episode | once
+  dev_per_class: 5
+  unresolved_maps_to: UNKNOWN
+
+policy:
+  second_call: false              # opt-in, pre-registered uncertainty band
+  second_call_band: [0.35, 0.65]
+  max_calls: 2
+
+methods: [names, sage0, append, fresh, prism]
+
+memory:
+  card_tokens: 128
+  mask_unadmitted_mentions: true
+
+prism:
+  alpha: 1.0
+  beta: 0.5
+  gamma: 0.25
+  refresh_top_k: 3
+  interference_threshold: 0.15
+
+compute:
+  max_gpu_hours: 24.0
+  max_calls: 60000
+  parallel: 1
+  checkpoint_every: 25
+
+shifts:
+  enabled: []                     # e.g. [covariate, prevalence] — Gate 5 only
+  covariate:
+    brightness: [0.6, 1.4]
+    blur: [1.0]
+    jpeg: [30]
+    severe_blur: [6.0]
+    occlusion: [0.4]
+  prevalence: [0.10, 0.25, 0.50]
+
+smoke: {classes: 3, images_per_class: 3, dev_per_class: 2}

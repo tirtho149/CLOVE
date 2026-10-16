@@ -1,0 +1,54 @@
+# CLOVE soybean pilot on a LOCAL machine with 2x NVIDIA Titan RTX (24 GB, Turing sm_75)
+# serving Qwen2.5-VL-3B-Instruct with vLLM: one server per GPU, client round-robins.
+#
+#   bash scripts/serve_qwen_titan.sh            # starts both servers, waits for /health
+#   python -m clove.cli smoke    --config configs/qwen3b_titan.yaml
+#   python -m clove.cli estimate --config configs/qwen3b_titan.yaml
+#   python -m clove.cli run      --config configs/qwen3b_titan.yaml --methods names,sage0,append,fresh,prism
+#
+# Same data, orders, budgets and statistics as pilot.yaml; only the backbone changes, so
+# run ids differ and results never mix with the 32B or Claude runs. A 3B model is a
+# weaker recogniser: compare its numbers only within this config.
+include: [pilot.yaml]
+
+run_name: soybean_pilot_qwen3b_titan
+
+paths:
+  # Paths are relative to this file. Copy the whole `Research/code` tree (clove,
+  # sage-nova-mirror, sage-wacv2027, SAGE) to the GPU machine, or point these at
+  # wherever the SAGE files live there. The laptop has only 556/1,234 test images;
+  # put the full content-addressed pool in one of these directories.
+  image_dirs:
+    - ../../sage-nova-mirror/dup_audit/scale_images
+    - ../../sage-wacv2027/data/images
+    - ../../images_full                     # <- full WACV pool, if copied separately
+
+model:
+  backend: openai_compat
+  model_id: Qwen/Qwen2.5-VL-3B-Instruct   # must equal the vLLM --served-model-name
+  revision: null                          # pin the HF commit before the real run
+  base_urls:                              # one vLLM per Titan RTX (scripts/serve_qwen_titan.sh)
+    - http://127.0.0.1:8000
+    - http://127.0.0.1:8001
+  tokenizer: Qwen/Qwen2.5-VL-3B-Instruct  # exact b_KB counting (needs `pip install -e '.[gpu]'`)
+  require_exact_tokenizer: true
+  dtype: float16                          # Turing has no bf16 (recorded in the cache key)
+  max_pixels: 802816                      # 1024 x 28 x 28 -> <= ~1024 visual tokens per image
+  temperature: 0.0
+  top_logprobs: 10
+  timeout_s: 120
+  max_retries: 2
+
+gate:
+  mode: threshold                         # vLLM gives logprobs: calibrated unknown gate (dev 95% TPR)
+
+retrieval:
+  visual: siglip                          # makes r=4 binding; SigLIP runs on cuda:0 next to vLLM
+  siglip_model: google/siglip-so400m-patch14-384
+  device: cuda:0
+
+compute:
+  n_gpus: 2
+  parallel: 16                            # concurrent requests across both servers (vLLM batches them)
+  max_gpu_hours: 24.0                     # `estimate` blocks the run above this
+  max_calls: 200000

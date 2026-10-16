@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clove"
+version = "0.1.0"
+description = "CLOVE: token-efficient continual open-world visual evaluation on SAGE (soybean pilot) with the PRISM memory policy."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<3",
+    "pyyaml>=6,<7",
+    "pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7,<10"]
+gpu = ["torch>=2.3", "transformers>=4.57", "accelerate>=0.30"]
+figures = ["matplotlib>=3.7,<4"]
+
+[project.scripts]
+clove = "clove.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
