@@ -1,0 +1,10 @@
+# Exact environment of the 2026-10-16 laptop runs (macOS arm64, Python 3.12.14).
+# Install with: pip install -r requirements-lock.txt && pip install -e . --no-deps
+iniconfig==2.3.1
+numpy==2.5.4
+packaging==26.3
+pillow==12.3.0
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+PyYAML==6.0.3
