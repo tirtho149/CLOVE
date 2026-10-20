@@ -238,7 +238,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
     <a class="btn" href="#bibtex"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>BibTeX</a>
   </div>
   <div class="stats">
-    <div class="stat"><div class="n">11</div><div class="l">agricultural data sets<br>pre-registered confirmation</div></div>
+    <div class="stat"><div class="n">12</div><div class="l">agricultural data sets<br>pre-registered confirmation</div></div>
     <div class="stat"><div class="n">12/12</div><div class="l">AgEval subsets audited<br>21 candidates total</div></div>
     <div class="stat"><div class="n">128 KiB</div><div class="l">external memory<br>the only state that changes</div></div>
     <div class="stat"><div class="n">0</div><div class="l">trained parameters<br>Qwen2.5-VL-3B frozen</div></div>
@@ -312,6 +312,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
   <span class="kick">Results</span><h2>Where CLOVE-D12 improves accuracy</h2>
   <div class="tw"><table><thead><tr><th>Data set</th><th>Released</th><th>Img/cl. U→D</th><th>Baseline</th><th>Baseline BA</th><th>CLOVE-D12 BA</th><th>Effect</th><th>Δ [95% CI]</th><th>p<sub>Holm</sub></th><th>Verdict</th></tr></thead><tbody>
 <tr class='hot'><td class='ds'>PlantDoc</td><td class='n'>22</td><td class='n'>0.4 &rarr; 1.9</td><td>uniform + RV</td><td class='n'>20</td><td class='n'><b>47</b></td><td class='eff'><i class='ax'></i><i class='bx p' style='left:50%;width:27.27272727272727%'></i></td><td class='n'>+27.3 <span style='color:var(--muted)'>[+18.2, +36.4]</span></td><td class='n'>0.002</td><td><span class='vd g'>confirmed gain</span></td></tr>
+<tr class='hot'><td class='ds'>PlantVillage</td><td class='n'>30</td><td class='n'>0.3 &rarr; 1.6</td><td>uniform + RV</td><td class='n'>11</td><td class='n'><b>36</b></td><td class='eff'><i class='ax'></i><i class='bx p' style='left:50%;width:25.33333333333333%'></i></td><td class='n'>+25.3 <span style='color:var(--muted)'>[+17.3, +33.3]</span></td><td class='n'>0.002</td><td><span class='vd g'>confirmed gain</span></td></tr>
 <tr class='hot'><td class='ds'>IP102</td><td class='n'>20</td><td class='n'>0.5 &rarr; 2.2</td><td>uniform</td><td class='n'>14</td><td class='n'><b>31</b></td><td class='eff'><i class='ax'></i><i class='bx p' style='left:50%;width:25.0%'></i></td><td class='n'>+25.0 <span style='color:var(--muted)'>[+16.7, +33.3]</span></td><td class='n'>0.010</td><td><span class='vd g'>confirmed gain</span></td></tr>
 <tr class=''><td class='ds'>FUSARIUM 22</td><td class='n'>4</td><td class='n'>1.8 &rarr; 5.0</td><td>uniform</td><td class='n'>25</td><td class='n'><b>33</b></td><td class='eff'><i class='ax'></i><i class='bx p' style='left:50%;width:8.33333333333333%'></i></td><td class='n'>+8.3 <span style='color:var(--muted)'>[-16.7, +33.3]</span></td><td class='n'>1.000</td><td><span class='vd n'>gain, n.s.</span></td></tr>
 <tr class=''><td class='ds'>iNatAg-25</td><td class='n'>20</td><td class='n'>0.3 &rarr; 1.6</td><td>uniform</td><td class='n'>50</td><td class='n'><b>56</b></td><td class='eff'><i class='ax'></i><i class='bx p' style='left:50%;width:3.33333333333334%'></i></td><td class='n'>+3.3 <span style='color:var(--muted)'>[-6.7, +13.3]</span></td><td class='n'>1.000</td><td><span class='vd n'>gain, n.s.</span></td></tr>
@@ -336,7 +337,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
 <tr><td class='ds'>iNatAg-25</td><td>external</td><td class='n'>25</td><td><span class='pill ok'>evaluated</span></td><td class='note'></td></tr>
 <tr><td class='ds'>iNatAg-100</td><td>external</td><td class='n'>100</td><td><span class='pill run'>running</span></td><td class='note'>pre-registered &gt;=25-class extension</td></tr>
 <tr><td class='ds'>PlantDoc (classification)</td><td>external</td><td class='n'>27</td><td><span class='pill ok'>evaluated</span></td><td class='note'>web images; spider-mite class excluded (2 images)</td></tr>
-<tr><td class='ds'>PlantVillage</td><td>external</td><td class='n'>38</td><td><span class='pill run'>running</span></td><td class='note'>grouped by leaf-map; 26% ungrouped</td></tr>
+<tr><td class='ds'>PlantVillage</td><td>external</td><td class='n'>38</td><td><span class='pill ok'>evaluated</span></td><td class='note'>grouped by leaf-map; 26% ungrouped</td></tr>
 <tr><td class='ds'>IP102 (96 classes)</td><td>external</td><td class='n'>96</td><td><span class='pill run'>running</span></td><td class='note'>6 classes with &lt;60 images excluded; overlap with IP102-25 cohorts excluded</td></tr>
 <tr><td class='ds'>PlantWild</td><td>external</td><td class='n'>89</td><td><span class='pill dev'>development only</span></td><td class='note'>40/class sample used every source group; PlantWild-v2 not used (no split metadata)</td></tr>
 <tr><td class='ds'>iNatAg-500</td><td>external</td><td class='n'>500</td><td><span class='pill pend'>not run</span></td><td class='note'>~46 GB stream exceeds the run budget</td></tr>
