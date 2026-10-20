@@ -3800,7 +3800,222 @@
     "latency_s": 6.161,
     "calls": 1,
     "mem_bytes": 123267,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "wheat phloeothrips",
+       "p": 0.00189
+      },
+      {
+       "letter": "B",
+       "option": "lytta polita",
+       "p": 0.00056
+      },
+      {
+       "letter": "C",
+       "option": "Toxoptera aurantii",
+       "p": 0.00065
+      },
+      {
+       "letter": "D",
+       "option": "brown plant hopper",
+       "p": 0.00092
+      },
+      {
+       "letter": "E",
+       "option": "Toxoptera citricidus",
+       "p": 0.00301
+      },
+      {
+       "letter": "F",
+       "option": "Miridae",
+       "p": 0.00037
+      },
+      {
+       "letter": "G",
+       "option": "Phyllocoptes oleiverus ashmead",
+       "p": 0.00066
+      },
+      {
+       "letter": "H",
+       "option": "Dacus dorsalis(Hendel)",
+       "p": 0.00081
+      },
+      {
+       "letter": "I",
+       "option": "wheat blossom midge",
+       "p": 0.00347
+      },
+      {
+       "letter": "J",
+       "option": "alfalfa weevil",
+       "p": 0.00156
+      },
+      {
+       "letter": "K",
+       "option": "Ceroplastes rubens",
+       "p": 0.00111
+      },
+      {
+       "letter": "L",
+       "option": "Thrips",
+       "p": 0.00109
+      },
+      {
+       "letter": "M",
+       "option": "yellow cutworm",
+       "p": 0.00116
+      },
+      {
+       "letter": "N",
+       "option": "english grain aphid",
+       "p": 0.00628
+      },
+      {
+       "letter": "O",
+       "option": "Potosiabre vitarsis",
+       "p": 0.0059
+      },
+      {
+       "letter": "P",
+       "option": "Ampelophaga",
+       "p": 0.0006
+      },
+      {
+       "letter": "Q",
+       "option": "rice leaf roller",
+       "p": 0.00164
+      },
+      {
+       "letter": "R",
+       "option": "grain spreader thrips",
+       "p": 0.00132
+      },
+      {
+       "letter": "S",
+       "option": "alfalfa plant bug",
+       "p": 0.00283
+      },
+      {
+       "letter": "T",
+       "option": "legume blister beetle",
+       "p": 0.01734
+      },
+      {
+       "letter": "U",
+       "option": "UNKNOWN",
+       "p": 0.94683
+      }
+     ],
+     "chosen_letter": "U",
+     "context": [
+      {
+       "cls": "wheat phloeothrips",
+       "text": "Class 'wheat phloeothrips'. Notes: All images show wheat phloeothrips with elongated bodies, red or yellow coloration, and segmented legs. They have a smooth texture and no distinct patterns.",
+       "n_images": 1
+      },
+      {
+       "cls": "lytta polita",
+       "text": "Class 'lytta polita'. Notes: The insects are green and black with shiny metallic sheen. They have long antennae and legs. The insects are on leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "text": "Class 'Toxoptera aurantii'. Notes: The images show insects with brown and black colour, long antennae, and legs.",
+       "n_images": 0
+      },
+      {
+       "cls": "brown plant hopper",
+       "text": "Class 'brown plant hopper'. Notes: Brown plant hoppers in different stages of development on green leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "text": "Class 'Toxoptera citricidus'. Notes: All images show small black insects with long antennae and legs. The insects have a shiny, glossy texture. They are seen on green leaves with some red flowers in the background.",
+       "n_images": 0
+      },
+      {
+       "cls": "Miridae",
+       "text": "Class 'Miridae'. Notes: All images show small insects with long antennae and legs. They have elongated bodies, with one image showing a yellowish body and another showing a reddish-brown body. The insects have distinct patterns on their wings or bodies, such",
+       "n_images": 0
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "text": "Class 'Phyllocoptes oleiverus ashmead'. Notes: The images show small red insects on green leaves. The insects have elongated bodies and segmented legs. They appear to be crawling on the leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "text": "Class 'Dacus dorsalis(Hendel)'. Notes: The insects are yellow and black with stripes. They have long antennae and wings. The fruit is orange and green.",
+       "n_images": 0
+      },
+      {
+       "cls": "wheat blossom midge",
+       "text": "Class 'wheat blossom midge'. Notes: All images show wheat blossoms with green leaves and yellow flowers. The midges are small insects with elongated bodies and antennae.",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa weevil",
+       "text": "Class 'alfalfa weevil'. Notes: All images depict small insects with elongated bodies and antennae. The first image shows a striped blister beetle, while the others feature alfalfa weevils. The insects have segmented bodies, and their patterns include stripes or spots. The we",
+       "n_images": 1
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "text": "Class 'Ceroplastes rubens'. Notes: The images show Ceroplastes rubens with red bodies and brown legs on green leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Thrips",
+       "text": "Class 'Thrips'. Notes: The images show green leaves with black spots and thrips on them.",
+       "n_images": 0
+      },
+      {
+       "cls": "yellow cutworm",
+       "text": "Class 'yellow cutworm'. Notes: The yellow cutworms in the images have brown and white bodies with black spots. They have long antennae and legs. The larvae are elongated and segmented. The adult moth has a brown body with white markings.",
+       "n_images": 1
+      },
+      {
+       "cls": "english grain aphid",
+       "text": "Class 'english grain aphid'. Notes: The images show green and yellow aphids on leaves. They have long antennae, six legs, and a segmented body. The leaves are green with some brown spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "text": "Class 'Potosiabre vitarsis'. Notes: The insects are black with yellow and green markings. They have six legs and two antennae. The insects are crawling on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Ampelophaga",
+       "text": "Class 'Ampelophaga'. Notes: The images show brown and black insects with wings, green leaves, and some insects on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "rice leaf roller",
+       "text": "Class 'rice leaf roller'. Notes: The images show a green rice leaf with a yellowish-green caterpillar on it. The caterpillar has a segmented body with a yellow head and black spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "grain spreader thrips",
+       "text": "Class 'grain spreader thrips'. Notes: The grain spreader thrips are small insects with elongated bodies and thin legs. They have a reddish-brown coloration and a slender, segmented body. Their wings are transparent and they have a pair of antennae on their head",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "text": "Class 'alfalfa plant bug'. Notes: All images show brown and green insects with elongated bodies and segmented legs. They have antennae and compound eyes. The insects are on plants with green leaves and purple flowers.",
+       "n_images": 0
+      },
+      {
+       "cls": "legume blister beetle",
+       "text": "Class 'legume blister beetle'. Notes: The insects are black with red heads and antennae. They have six legs and two antennae.",
+       "n_images": 1
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. wheat phloeothrips\nB. lytta polita\nC. Toxoptera aurantii\nD. brown plant hopper\nE. Toxoptera citricidus\nF. Miridae\nG. Phyllocoptes oleiverus ashmead\nH. Dacus dorsalis(Hendel)\nI. wheat blossom midge\nJ. alfalfa weevil\nK. Ceroplastes rubens\nL. Thrips\nM. yellow cutworm\nN. english grain aphid\nO. Potosiabre vitarsis\nP. Ampelophaga\nQ. rice leaf roller\nR. grain spreader thrips\nS. alfalfa plant bug\nT. legume blister beetle\nU. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    },
    "D12": {
     "pred": "Ampelophaga",
@@ -3885,7 +4100,52 @@
     "latency_s": 3.578,
     "calls": 1,
     "mem_bytes": 128316,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "yellow cutworm",
+       "p": 0.02244
+      },
+      {
+       "letter": "B",
+       "option": "Ampelophaga",
+       "p": 0.69806
+      },
+      {
+       "letter": "C",
+       "option": "alfalfa plant bug",
+       "p": 0.00613
+      },
+      {
+       "letter": "D",
+       "option": "UNKNOWN",
+       "p": 0.27336
+      }
+     ],
+     "chosen_letter": "B",
+     "context": [
+      {
+       "cls": "yellow cutworm",
+       "text": "Class 'yellow cutworm'. Notes: The yellow cutworms in the images have brown and white bodies with black spots. They have long antennae and legs. The larvae are elongated and segmented. The adult moth has a brown body with white markings.",
+       "n_images": 3
+      },
+      {
+       "cls": "Ampelophaga",
+       "text": "Class 'Ampelophaga'. Notes: The images show brown and black insects with wings, green leaves, and some insects on leaves.",
+       "n_images": 2
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "text": "Class 'alfalfa plant bug'. Notes: All images show brown and green insects with elongated bodies and segmented legs. They have antennae and compound eyes. The insects are on plants with green leaves and purple flowers.",
+       "n_images": 2
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. yellow cutworm\nB. Ampelophaga\nC. alfalfa plant bug\nD. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    }
   },
   {
@@ -4048,7 +4308,222 @@
     "latency_s": 6.175,
     "calls": 1,
     "mem_bytes": 123267,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "wheat phloeothrips",
+       "p": 0.05924
+      },
+      {
+       "letter": "B",
+       "option": "lytta polita",
+       "p": 0.06818
+      },
+      {
+       "letter": "C",
+       "option": "Toxoptera aurantii",
+       "p": 0.02179
+      },
+      {
+       "letter": "D",
+       "option": "brown plant hopper",
+       "p": 0.05565
+      },
+      {
+       "letter": "E",
+       "option": "Toxoptera citricidus",
+       "p": 0.07726
+      },
+      {
+       "letter": "F",
+       "option": "Miridae",
+       "p": 0.12347
+      },
+      {
+       "letter": "G",
+       "option": "Phyllocoptes oleiverus ashmead",
+       "p": 0.00802
+      },
+      {
+       "letter": "H",
+       "option": "Dacus dorsalis(Hendel)",
+       "p": 0.01864
+      },
+      {
+       "letter": "I",
+       "option": "wheat blossom midge",
+       "p": 0.02933
+      },
+      {
+       "letter": "J",
+       "option": "alfalfa weevil",
+       "p": 0.01521
+      },
+      {
+       "letter": "K",
+       "option": "Ceroplastes rubens",
+       "p": 0.00409
+      },
+      {
+       "letter": "L",
+       "option": "Thrips",
+       "p": 0.08354
+      },
+      {
+       "letter": "M",
+       "option": "yellow cutworm",
+       "p": 0.01893
+      },
+      {
+       "letter": "N",
+       "option": "english grain aphid",
+       "p": 0.00967
+      },
+      {
+       "letter": "O",
+       "option": "Potosiabre vitarsis",
+       "p": 0.07258
+      },
+      {
+       "letter": "P",
+       "option": "Ampelophaga",
+       "p": 0.08755
+      },
+      {
+       "letter": "Q",
+       "option": "rice leaf roller",
+       "p": 0.04267
+      },
+      {
+       "letter": "R",
+       "option": "grain spreader thrips",
+       "p": 0.04136
+      },
+      {
+       "letter": "S",
+       "option": "alfalfa plant bug",
+       "p": 0.01893
+      },
+      {
+       "letter": "T",
+       "option": "legume blister beetle",
+       "p": 0.05067
+      },
+      {
+       "letter": "U",
+       "option": "UNKNOWN",
+       "p": 0.0932
+      }
+     ],
+     "chosen_letter": "F",
+     "context": [
+      {
+       "cls": "wheat phloeothrips",
+       "text": "Class 'wheat phloeothrips'. Notes: All images show wheat phloeothrips with elongated bodies, red or yellow coloration, and segmented legs. They have a smooth texture and no distinct patterns.",
+       "n_images": 1
+      },
+      {
+       "cls": "lytta polita",
+       "text": "Class 'lytta polita'. Notes: The insects are green and black with shiny metallic sheen. They have long antennae and legs. The insects are on leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "text": "Class 'Toxoptera aurantii'. Notes: The images show insects with brown and black colour, long antennae, and legs.",
+       "n_images": 0
+      },
+      {
+       "cls": "brown plant hopper",
+       "text": "Class 'brown plant hopper'. Notes: Brown plant hoppers in different stages of development on green leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "text": "Class 'Toxoptera citricidus'. Notes: All images show small black insects with long antennae and legs. The insects have a shiny, glossy texture. They are seen on green leaves with some red flowers in the background.",
+       "n_images": 0
+      },
+      {
+       "cls": "Miridae",
+       "text": "Class 'Miridae'. Notes: All images show small insects with long antennae and legs. They have elongated bodies, with one image showing a yellowish body and another showing a reddish-brown body. The insects have distinct patterns on their wings or bodies, such",
+       "n_images": 0
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "text": "Class 'Phyllocoptes oleiverus ashmead'. Notes: The images show small red insects on green leaves. The insects have elongated bodies and segmented legs. They appear to be crawling on the leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "text": "Class 'Dacus dorsalis(Hendel)'. Notes: The insects are yellow and black with stripes. They have long antennae and wings. The fruit is orange and green.",
+       "n_images": 0
+      },
+      {
+       "cls": "wheat blossom midge",
+       "text": "Class 'wheat blossom midge'. Notes: All images show wheat blossoms with green leaves and yellow flowers. The midges are small insects with elongated bodies and antennae.",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa weevil",
+       "text": "Class 'alfalfa weevil'. Notes: All images depict small insects with elongated bodies and antennae. The first image shows a striped blister beetle, while the others feature alfalfa weevils. The insects have segmented bodies, and their patterns include stripes or spots. The we",
+       "n_images": 1
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "text": "Class 'Ceroplastes rubens'. Notes: The images show Ceroplastes rubens with red bodies and brown legs on green leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Thrips",
+       "text": "Class 'Thrips'. Notes: The images show green leaves with black spots and thrips on them.",
+       "n_images": 0
+      },
+      {
+       "cls": "yellow cutworm",
+       "text": "Class 'yellow cutworm'. Notes: The yellow cutworms in the images have brown and white bodies with black spots. They have long antennae and legs. The larvae are elongated and segmented. The adult moth has a brown body with white markings.",
+       "n_images": 1
+      },
+      {
+       "cls": "english grain aphid",
+       "text": "Class 'english grain aphid'. Notes: The images show green and yellow aphids on leaves. They have long antennae, six legs, and a segmented body. The leaves are green with some brown spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "text": "Class 'Potosiabre vitarsis'. Notes: The insects are black with yellow and green markings. They have six legs and two antennae. The insects are crawling on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Ampelophaga",
+       "text": "Class 'Ampelophaga'. Notes: The images show brown and black insects with wings, green leaves, and some insects on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "rice leaf roller",
+       "text": "Class 'rice leaf roller'. Notes: The images show a green rice leaf with a yellowish-green caterpillar on it. The caterpillar has a segmented body with a yellow head and black spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "grain spreader thrips",
+       "text": "Class 'grain spreader thrips'. Notes: The grain spreader thrips are small insects with elongated bodies and thin legs. They have a reddish-brown coloration and a slender, segmented body. Their wings are transparent and they have a pair of antennae on their head",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "text": "Class 'alfalfa plant bug'. Notes: All images show brown and green insects with elongated bodies and segmented legs. They have antennae and compound eyes. The insects are on plants with green leaves and purple flowers.",
+       "n_images": 0
+      },
+      {
+       "cls": "legume blister beetle",
+       "text": "Class 'legume blister beetle'. Notes: The insects are black with red heads and antennae. They have six legs and two antennae.",
+       "n_images": 1
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. wheat phloeothrips\nB. lytta polita\nC. Toxoptera aurantii\nD. brown plant hopper\nE. Toxoptera citricidus\nF. Miridae\nG. Phyllocoptes oleiverus ashmead\nH. Dacus dorsalis(Hendel)\nI. wheat blossom midge\nJ. alfalfa weevil\nK. Ceroplastes rubens\nL. Thrips\nM. yellow cutworm\nN. english grain aphid\nO. Potosiabre vitarsis\nP. Ampelophaga\nQ. rice leaf roller\nR. grain spreader thrips\nS. alfalfa plant bug\nT. legume blister beetle\nU. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    },
    "D12": {
     "pred": "Miridae",
@@ -4128,7 +4603,52 @@
     "latency_s": 4.295,
     "calls": 1,
     "mem_bytes": 128316,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "Miridae",
+       "p": 0.7943
+      },
+      {
+       "letter": "B",
+       "option": "alfalfa weevil",
+       "p": 0.00755
+      },
+      {
+       "letter": "C",
+       "option": "alfalfa plant bug",
+       "p": 0.0705
+      },
+      {
+       "letter": "D",
+       "option": "UNKNOWN",
+       "p": 0.12766
+      }
+     ],
+     "chosen_letter": "A",
+     "context": [
+      {
+       "cls": "Miridae",
+       "text": "Class 'Miridae'. Notes: All images show small insects with long antennae and legs. They have elongated bodies, with one image showing a yellowish body and another showing a reddish-brown body. The insects have distinct patterns on their wings or bodies, such",
+       "n_images": 2
+      },
+      {
+       "cls": "alfalfa weevil",
+       "text": "Class 'alfalfa weevil'. Notes: All images depict small insects with elongated bodies and antennae. The first image shows a striped blister beetle, while the others feature alfalfa weevils. The insects have segmented bodies, and their patterns include stripes or spots. The we",
+       "n_images": 2
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "text": "Class 'alfalfa plant bug'. Notes: All images show brown and green insects with elongated bodies and segmented legs. They have antennae and compound eyes. The insects are on plants with green leaves and purple flowers.",
+       "n_images": 2
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. Miridae\nB. alfalfa weevil\nC. alfalfa plant bug\nD. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    }
   },
   {
@@ -4291,7 +4811,222 @@
     "latency_s": 6.147,
     "calls": 1,
     "mem_bytes": 123267,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "wheat phloeothrips",
+       "p": 0.02052
+      },
+      {
+       "letter": "B",
+       "option": "lytta polita",
+       "p": 0.00829
+      },
+      {
+       "letter": "C",
+       "option": "Toxoptera aurantii",
+       "p": 0.00351
+      },
+      {
+       "letter": "D",
+       "option": "brown plant hopper",
+       "p": 0.0094
+      },
+      {
+       "letter": "E",
+       "option": "Toxoptera citricidus",
+       "p": 0.03658
+      },
+      {
+       "letter": "F",
+       "option": "Miridae",
+       "p": 0.00131
+      },
+      {
+       "letter": "G",
+       "option": "Phyllocoptes oleiverus ashmead",
+       "p": 0.0022
+      },
+      {
+       "letter": "H",
+       "option": "Dacus dorsalis(Hendel)",
+       "p": 0.0048
+      },
+      {
+       "letter": "I",
+       "option": "wheat blossom midge",
+       "p": 0.00357
+      },
+      {
+       "letter": "J",
+       "option": "alfalfa weevil",
+       "p": 0.00779
+      },
+      {
+       "letter": "K",
+       "option": "Ceroplastes rubens",
+       "p": 0.0041
+      },
+      {
+       "letter": "L",
+       "option": "Thrips",
+       "p": 0.00519
+      },
+      {
+       "letter": "M",
+       "option": "yellow cutworm",
+       "p": 0.01245
+      },
+      {
+       "letter": "N",
+       "option": "english grain aphid",
+       "p": 0.78221
+      },
+      {
+       "letter": "O",
+       "option": "Potosiabre vitarsis",
+       "p": 0.00213
+      },
+      {
+       "letter": "P",
+       "option": "Ampelophaga",
+       "p": 0.00092
+      },
+      {
+       "letter": "Q",
+       "option": "rice leaf roller",
+       "p": 0.00127
+      },
+      {
+       "letter": "R",
+       "option": "grain spreader thrips",
+       "p": 0.00066
+      },
+      {
+       "letter": "S",
+       "option": "alfalfa plant bug",
+       "p": 0.00149
+      },
+      {
+       "letter": "T",
+       "option": "legume blister beetle",
+       "p": 0.00386
+      },
+      {
+       "letter": "U",
+       "option": "UNKNOWN",
+       "p": 0.08776
+      }
+     ],
+     "chosen_letter": "N",
+     "context": [
+      {
+       "cls": "wheat phloeothrips",
+       "text": "Class 'wheat phloeothrips'. Notes: All images show wheat phloeothrips with elongated bodies, red or yellow coloration, and segmented legs. They have a smooth texture and no distinct patterns.",
+       "n_images": 1
+      },
+      {
+       "cls": "lytta polita",
+       "text": "Class 'lytta polita'. Notes: The insects are green and black with shiny metallic sheen. They have long antennae and legs. The insects are on leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "text": "Class 'Toxoptera aurantii'. Notes: The images show insects with brown and black colour, long antennae, and legs.",
+       "n_images": 0
+      },
+      {
+       "cls": "brown plant hopper",
+       "text": "Class 'brown plant hopper'. Notes: Brown plant hoppers in different stages of development on green leaves.",
+       "n_images": 1
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "text": "Class 'Toxoptera citricidus'. Notes: All images show small black insects with long antennae and legs. The insects have a shiny, glossy texture. They are seen on green leaves with some red flowers in the background.",
+       "n_images": 0
+      },
+      {
+       "cls": "Miridae",
+       "text": "Class 'Miridae'. Notes: All images show small insects with long antennae and legs. They have elongated bodies, with one image showing a yellowish body and another showing a reddish-brown body. The insects have distinct patterns on their wings or bodies, such",
+       "n_images": 0
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "text": "Class 'Phyllocoptes oleiverus ashmead'. Notes: The images show small red insects on green leaves. The insects have elongated bodies and segmented legs. They appear to be crawling on the leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "text": "Class 'Dacus dorsalis(Hendel)'. Notes: The insects are yellow and black with stripes. They have long antennae and wings. The fruit is orange and green.",
+       "n_images": 0
+      },
+      {
+       "cls": "wheat blossom midge",
+       "text": "Class 'wheat blossom midge'. Notes: All images show wheat blossoms with green leaves and yellow flowers. The midges are small insects with elongated bodies and antennae.",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa weevil",
+       "text": "Class 'alfalfa weevil'. Notes: All images depict small insects with elongated bodies and antennae. The first image shows a striped blister beetle, while the others feature alfalfa weevils. The insects have segmented bodies, and their patterns include stripes or spots. The we",
+       "n_images": 1
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "text": "Class 'Ceroplastes rubens'. Notes: The images show Ceroplastes rubens with red bodies and brown legs on green leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Thrips",
+       "text": "Class 'Thrips'. Notes: The images show green leaves with black spots and thrips on them.",
+       "n_images": 0
+      },
+      {
+       "cls": "yellow cutworm",
+       "text": "Class 'yellow cutworm'. Notes: The yellow cutworms in the images have brown and white bodies with black spots. They have long antennae and legs. The larvae are elongated and segmented. The adult moth has a brown body with white markings.",
+       "n_images": 1
+      },
+      {
+       "cls": "english grain aphid",
+       "text": "Class 'english grain aphid'. Notes: The images show green and yellow aphids on leaves. They have long antennae, six legs, and a segmented body. The leaves are green with some brown spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "text": "Class 'Potosiabre vitarsis'. Notes: The insects are black with yellow and green markings. They have six legs and two antennae. The insects are crawling on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "Ampelophaga",
+       "text": "Class 'Ampelophaga'. Notes: The images show brown and black insects with wings, green leaves, and some insects on leaves.",
+       "n_images": 0
+      },
+      {
+       "cls": "rice leaf roller",
+       "text": "Class 'rice leaf roller'. Notes: The images show a green rice leaf with a yellowish-green caterpillar on it. The caterpillar has a segmented body with a yellow head and black spots.",
+       "n_images": 1
+      },
+      {
+       "cls": "grain spreader thrips",
+       "text": "Class 'grain spreader thrips'. Notes: The grain spreader thrips are small insects with elongated bodies and thin legs. They have a reddish-brown coloration and a slender, segmented body. Their wings are transparent and they have a pair of antennae on their head",
+       "n_images": 1
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "text": "Class 'alfalfa plant bug'. Notes: All images show brown and green insects with elongated bodies and segmented legs. They have antennae and compound eyes. The insects are on plants with green leaves and purple flowers.",
+       "n_images": 0
+      },
+      {
+       "cls": "legume blister beetle",
+       "text": "Class 'legume blister beetle'. Notes: The insects are black with red heads and antennae. They have six legs and two antennae.",
+       "n_images": 1
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. wheat phloeothrips\nB. lytta polita\nC. Toxoptera aurantii\nD. brown plant hopper\nE. Toxoptera citricidus\nF. Miridae\nG. Phyllocoptes oleiverus ashmead\nH. Dacus dorsalis(Hendel)\nI. wheat blossom midge\nJ. alfalfa weevil\nK. Ceroplastes rubens\nL. Thrips\nM. yellow cutworm\nN. english grain aphid\nO. Potosiabre vitarsis\nP. Ampelophaga\nQ. rice leaf roller\nR. grain spreader thrips\nS. alfalfa plant bug\nT. legume blister beetle\nU. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    },
    "D12": {
     "pred": "Toxoptera citricidus",
@@ -4376,7 +5111,52 @@
     "latency_s": 3.595,
     "calls": 1,
     "mem_bytes": 128316,
-    "physical_gpu": "0"
+    "physical_gpu": "0",
+    "qwen": {
+     "options": [
+      {
+       "letter": "A",
+       "option": "Toxoptera aurantii",
+       "p": 0.17377
+      },
+      {
+       "letter": "B",
+       "option": "Toxoptera citricidus",
+       "p": 0.62576
+      },
+      {
+       "letter": "C",
+       "option": "rice leaf roller",
+       "p": 0.01259
+      },
+      {
+       "letter": "D",
+       "option": "UNKNOWN",
+       "p": 0.18789
+      }
+     ],
+     "chosen_letter": "B",
+     "context": [
+      {
+       "cls": "Toxoptera aurantii",
+       "text": "Class 'Toxoptera aurantii'. Notes: The images show insects with brown and black colour, long antennae, and legs.",
+       "n_images": 2
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "text": "Class 'Toxoptera citricidus'. Notes: All images show small black insects with long antennae and legs. The insects have a shiny, glossy texture. They are seen on green leaves with some red flowers in the background.",
+       "n_images": 2
+      },
+      {
+       "cls": "rice leaf roller",
+       "text": "Class 'rice leaf roller'. Notes: The images show a green rice leaf with a yellowish-green caterpillar on it. The caterpillar has a segmented body with a yellow head and black spots.",
+       "n_images": 3
+      }
+     ],
+     "question": "Which class does the query image belong to? If it matches none of the listed classes, choose UNKNOWN.\nA. Toxoptera aurantii\nB. Toxoptera citricidus\nC. rice leaf roller\nD. UNKNOWN (none of the listed classes)\nAnswer with the option's letter.",
+     "prompt_note": "Reconstructed from arms.py (mem_items + final_call) with the logged option order, evidence IDs and the stored Qwen-written notes; wrapped in the Qwen2.5-VL chat template. The verbatim prompt string was not saved.",
+     "output_note": "Qwen produces one next-token distribution over the option letters; the answer is the most probable letter. No free-text reasoning is generated."
+    }
    }
   }
  ],

@@ -1,0 +1,302 @@
+[
+ {
+  "id": "Bacterial_Blight__Soybean_Dise_125",
+  "role": "paper appendix example",
+  "title": "Reasoning Trace: Soybean Diseases \u2014 Bacterial_Blight__Soybean_Dise_125",
+  "crop": "Soybean",
+  "model": "sonnet (Claude alias; exact version not recorded)",
+  "kb_source": "internet",
+  "k": 8,
+  "prediction": "Soybean_Vein_necrosis_virus",
+  "ground_truth": "Bacterial_Blight",
+  "correct": false,
+  "confidence": 0.72,
+  "num_turns": 11,
+  "cost_usd": 0.2416164,
+  "duration_ms": 104107,
+  "refs_viewed": 8,
+  "events": [
+   {
+    "step": 1,
+    "kind": "observe",
+    "label": "Observe test image",
+    "tool": "Read(classify_za1w4kqf.jpg)",
+    "img": "sage/Soybean_Dise_125/test.jpg"
+   },
+   {
+    "step": 2,
+    "kind": "text",
+    "label": "Agent",
+    "text": "The test image shows a soybean leaf (upper surface) with dark brown to reddish-purple lesions concentrated along the midvein, some with yellow halos around them. Lesions appear angular/irregular. Let me check the part index then view reference images."
+   },
+   {
+    "step": 3,
+    "kind": "index",
+    "label": "Read anatomical part index",
+    "tool": "Read(part_index.md)",
+    "file": "Prepared_Dataset/Soybean/part_index.md"
+   },
+   {
+    "step": 4,
+    "kind": "text",
+    "label": "Agent",
+    "text": "The test image is a leaf. Top candidates based on the vein-associated dark brown/purple lesions with yellow halos: Soybean_Vein_necrosis_virus, Bacterial_Blight, Septoria_brown_spot, Frogeye_leaf_spot. Now viewing one reference from each of 8 classes."
+   },
+   {
+    "step": 5,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_126",
+    "tool": "Read(Soybean_Vein_necrosis_virus/leaf/Soybean_Dise_126.jpg)",
+    "ref_class": "Soybean_Vein_necrosis_virus",
+    "part": "leaf",
+    "ref_index": 1,
+    "img": "sage/Soybean_Dise_125/Soybean_Vein_necrosis_virus_Soybean_Dise_126.jpg"
+   },
+   {
+    "step": 6,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_131",
+    "tool": "Read(Bacterial_Blight/leaf/Soybean_Dise_131.jpg)",
+    "ref_class": "Bacterial_Blight",
+    "part": "leaf",
+    "ref_index": 2,
+    "img": "sage/Soybean_Dise_125/Bacterial_Blight_Soybean_Dise_131.jpg"
+   },
+   {
+    "step": 7,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_12",
+    "tool": "Read(Septoria_brown_spot/leaf/Soybean_Dise_12.jpg)",
+    "ref_class": "Septoria_brown_spot",
+    "part": "leaf",
+    "ref_index": 3,
+    "img": "sage/Soybean_Dise_125/Septoria_brown_spot_Soybean_Dise_12.jpg"
+   },
+   {
+    "step": 8,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_6",
+    "tool": "Read(Frogeye_leaf_spot/leaf/Soybean_Dise_6.jpg)",
+    "ref_class": "Frogeye_leaf_spot",
+    "part": "leaf",
+    "ref_index": 4,
+    "img": "sage/Soybean_Dise_125/Frogeye_leaf_spot_Soybean_Dise_6.jpg"
+   },
+   {
+    "step": 9,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_139",
+    "tool": "Read(Soybean_Vein_necrosis_virus/leaf/Soybean_Dise_139.jpg)",
+    "ref_class": "Soybean_Vein_necrosis_virus",
+    "part": "leaf",
+    "ref_index": 5,
+    "img": "sage/Soybean_Dise_125/Soybean_Vein_necrosis_virus_Soybean_Dise_139.jpg"
+   },
+   {
+    "step": 10,
+    "kind": "text",
+    "label": "Agent",
+    "text": "This Vein necrosis reference (139) looks very similar to the test image - dark brown/reddish lesions along veins with yellow surrounding tissue. Now checking 3 more classes for my remaining budget."
+   },
+   {
+    "step": 11,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_39",
+    "tool": "Read(Sudden_death_syndrome/leaf/Soybean_Dise_39.jpg)",
+    "ref_class": "Sudden_death_syndrome",
+    "part": "leaf",
+    "ref_index": 6,
+    "img": "sage/Soybean_Dise_125/Sudden_death_syndrome_Soybean_Dise_39.jpg"
+   },
+   {
+    "step": 12,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_107",
+    "tool": "Read(Cercospora/leaf/Soybean_Dise_107.jpg)",
+    "ref_class": "Cercospora",
+    "part": "leaf",
+    "ref_index": 7,
+    "img": "sage/Soybean_Dise_125/Cercospora_Soybean_Dise_107.jpg"
+   },
+   {
+    "step": 13,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_11",
+    "tool": "Read(Bacterial_Pustule/leaf/Soybean_Dise_11.jpg)",
+    "ref_class": "Bacterial_Pustule",
+    "part": "leaf",
+    "ref_index": 8,
+    "img": "sage/Soybean_Dise_125/Bacterial_Pustule_Soybean_Dise_11.jpg"
+   },
+   {
+    "step": 14,
+    "kind": "text",
+    "label": "Agent",
+    "text": "**Analysis summary:**\n\n- Test image: leaf with dark brown/purple-black lesions concentrated along the midvein in a band, with yellow/orange halos surrounding lesions. Angular appearance.\n- **Soybean_Vein_necrosis_virus (ref 139)**: Very strong match \u2014 dark reddish-brown necrotic lesions along veins with yellow surrounding tissue, same distribution pattern as test image.\n- Sudden_death_syndrome: Interveinal necrosis with green veins preserved \u2014 different pattern.\n- Cercospora: Many small scattered reddish-purple spots \u2014 different distribution.\n- Bacterial_Blight: Small angular early-stage yellow spots \u2014 less developed.\n- Septoria_brown_spot: Dark spots on heavily yellowing/senescing leaves \u2014 different.\n- Frogeye_leaf_spot: Circular gray-centered spots scattered across leaf \u2014 different.\n- Bacterial_Pustule: Pustule close-up \u2014 different appearance.\n\nThe test image's lesion pattern (dark necrosis along major veins with yellow halos, angular lesions) is consistent with the SVN description: \"irregular yellow spots along major leaf veins that progress to red-brown, necrotic lesions.\"\n\n```json\n{\"prediction\": \"Soybean_Vein_necrosis_virus\", \"confidence\": 0.72, \"reasoning\": \"Dark brown/reddish-purple necrotic lesions concentrated along the midvein with yellow halos match the characteristic vein-associated lesion pattern of Soybean Vein Necrosis Virus. Reference image 139 shows near-identical distribution and color progression. Other leaf diseases (SDS, Cercospora, Frogeye, Septoria) show scattered or interveinal patterns that don't match.\"}\n```"
+   }
+  ],
+  "source": {
+   "repo": "tirtho149/SAGE",
+   "commit": "d13ecec8012d48fceeac043c0f0ff295abbd7148",
+   "trace": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/traces/Bacterial_Blight__Soybean_Dise_125.json",
+   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Bacterial_Blight__Soybean_Dise_125.json"
+  },
+  "images_note": "Images from the SAGE repository (Prepared_Dataset), shown at the request of the SAGE authors; resized, EXIF removed.",
+  "not_recorded": "Tool results (image contents, part_index text), the system prompt and the user message are not saved by the SAGE harness."
+ },
+ {
+  "id": "Frogeye_leaf_spot__Soybean_Dise_21",
+  "role": "paper main-text example",
+  "title": "Reasoning Trace: Soybean Diseases \u2014 Frogeye_leaf_spot__Soybean_Dise_21",
+  "crop": "Soybean",
+  "model": "sonnet (Claude alias; exact version not recorded)",
+  "kb_source": "internet",
+  "k": 8,
+  "prediction": "Frogeye_leaf_spot",
+  "ground_truth": "Frogeye_leaf_spot",
+  "correct": true,
+  "confidence": 0.93,
+  "num_turns": 12,
+  "cost_usd": 0.23294370000000003,
+  "duration_ms": 81987,
+  "refs_viewed": 9,
+  "events": [
+   {
+    "step": 1,
+    "kind": "observe",
+    "label": "Observe test image",
+    "tool": "Read(classify_5vnwk6u6.jpg)",
+    "img": "sage/Soybean_Dise_21/test.jpg"
+   },
+   {
+    "step": 2,
+    "kind": "text",
+    "label": "Agent",
+    "text": "The test image shows a soybean leaf with small, circular lesions having gray/tan centers and distinct reddish-brown margins. This pattern is very characteristic of Frogeye leaf spot. Let me check the part index and confirm with reference images."
+   },
+   {
+    "step": 3,
+    "kind": "index",
+    "label": "Read anatomical part index",
+    "tool": "Read(part_index.md)",
+    "file": "Prepared_Dataset/Soybean/part_index.md"
+   },
+   {
+    "step": 4,
+    "kind": "text",
+    "label": "Agent",
+    "text": "Leaf is the affected part. Top candidates: Frogeye_leaf_spot (gray centers, reddish-brown borders), Septoria_brown_spot, Phyllosticta_leaf_spot. Let me check references."
+   },
+   {
+    "step": 5,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_6",
+    "tool": "Read(Frogeye_leaf_spot/leaf/Soybean_Dise_6.jpg)",
+    "ref_class": "Frogeye_leaf_spot",
+    "part": "leaf",
+    "ref_index": 1,
+    "img": "sage/Soybean_Dise_21/Frogeye_leaf_spot_Soybean_Dise_6.jpg"
+   },
+   {
+    "step": 6,
+    "kind": "text",
+    "label": "Agent",
+    "text": "Strong match - circular lesions with reddish-brown borders. Now checking 7 more different classes."
+   },
+   {
+    "step": 7,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_12",
+    "tool": "Read(Septoria_brown_spot/leaf/Soybean_Dise_12.jpg)",
+    "ref_class": "Septoria_brown_spot",
+    "part": "leaf",
+    "ref_index": 2,
+    "img": "sage/Soybean_Dise_21/Septoria_brown_spot_Soybean_Dise_12.jpg"
+   },
+   {
+    "step": 8,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_18",
+    "tool": "Read(Phyllosticta_leaf_spot/leaf/Soybean_Dise_18.jpg)",
+    "ref_class": "Phyllosticta_leaf_spot",
+    "part": "leaf",
+    "ref_index": 3,
+    "img": "sage/Soybean_Dise_21/Phyllosticta_leaf_spot_Soybean_Dise_18.jpg"
+   },
+   {
+    "step": 9,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_17",
+    "tool": "Read(Bacterial_Blight/leaf/Soybean_Dise_17.jpg)",
+    "ref_class": "Bacterial_Blight",
+    "part": "leaf",
+    "ref_index": 4,
+    "img": "sage/Soybean_Dise_21/Bacterial_Blight_Soybean_Dise_17.jpg"
+   },
+   {
+    "step": 10,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_74",
+    "tool": "Read(Soybean_rust/leaf/Soybean_Dise_74.jpg)",
+    "ref_class": "Soybean_rust",
+    "part": "leaf",
+    "ref_index": 5,
+    "img": "sage/Soybean_Dise_21/Soybean_rust_Soybean_Dise_74.jpg"
+   },
+   {
+    "step": 11,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_93",
+    "tool": "Read(Cercospora/leaf/Soybean_Dise_93.jpg)",
+    "ref_class": "Cercospora",
+    "part": "leaf",
+    "ref_index": 6,
+    "img": "sage/Soybean_Dise_21/Cercospora_Soybean_Dise_93.jpg"
+   },
+   {
+    "step": 12,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_137",
+    "tool": "Read(Downy_mildew/leaf/Soybean_Dise_137.jpg)",
+    "ref_class": "Downy_mildew",
+    "part": "leaf",
+    "ref_index": 7,
+    "img": "sage/Soybean_Dise_21/Downy_mildew_Soybean_Dise_137.jpg"
+   },
+   {
+    "step": 13,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_62",
+    "tool": "Read(Bacterial_Pustule/leaf/Soybean_Dise_62.jpg)",
+    "ref_class": "Bacterial_Pustule",
+    "part": "leaf",
+    "ref_index": 8,
+    "img": "sage/Soybean_Dise_21/Bacterial_Pustule_Soybean_Dise_62.jpg"
+   },
+   {
+    "step": 14,
+    "kind": "reference",
+    "label": "View reference: Soybean_Dise_39",
+    "tool": "Read(Sudden_death_syndrome/leaf/Soybean_Dise_39.jpg)",
+    "ref_class": "Sudden_death_syndrome",
+    "part": "leaf",
+    "ref_index": 9,
+    "img": "sage/Soybean_Dise_21/Sudden_death_syndrome_Soybean_Dise_39.jpg"
+   },
+   {
+    "step": 15,
+    "kind": "text",
+    "label": "Agent",
+    "text": "All 8 views used. The analysis is clear:\n\n- **Test image**: Small circular lesions (~5-10mm), gray/tan centers, distinct reddish-brown margins, scattered on green leaf\n- **Frogeye_leaf_spot reference**: Near-identical match - same circular morphology, same gray centers with reddish-brown borders\n- **All other candidates**: Don't match - Septoria shows irregular dark lesions with yellowing; Rust shows tiny numerous specks; Cercospora shows diffuse bronze discoloration; Bacterial Blight shows angular yellow-haloed lesions; SDS shows interveinal chlorosis; Downy mildew shows pale yellow patches; Bacterial Pustule shows confluent dark blotches\n\n```json\n{\"prediction\": \"Frogeye_leaf_spot\", \"confidence\": 0.93, \"reasoning\": \"The test image shows small, circular lesions with gray/tan centers and distinct reddish-brown margins on a green soybean leaf \u2014 the hallmark pattern of Frogeye leaf spot. The reference image (Soybean_Dise_6.jpg) is visually near-identical. All other leaf diseases show clearly different patterns: rust has tiny scattered specks, Cercospora shows diffuse bronze discoloration, Septoria shows irregular dark lesions with yellowing, and Bacterial Blight shows angular water-soaked lesions.\"}\n```"
+   }
+  ],
+  "source": {
+   "repo": "tirtho149/SAGE",
+   "commit": "d13ecec8012d48fceeac043c0f0ff295abbd7148",
+   "trace": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/traces/Frogeye_leaf_spot__Soybean_Dise_21.json",
+   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Frogeye_leaf_spot__Soybean_Dise_21.json"
+  },
+  "images_note": "Images from the SAGE repository (Prepared_Dataset), shown at the request of the SAGE authors; resized, EXIF removed.",
+  "not_recorded": "Tool results (image contents, part_index text), the system prompt and the user message are not saved by the SAGE harness."
+ }
+]
