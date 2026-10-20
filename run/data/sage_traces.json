@@ -21,7 +21,8 @@
     "kind": "observe",
     "label": "Observe test image",
     "tool": "Read(classify_za1w4kqf.jpg)",
-    "img": "sage/Soybean_Dise_125/test.jpg"
+    "img": "sage/Soybean_Dise_125/test.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 14088 (Soybean/Bacterial_Blight/Soybean_Dise_156.jpg, phash distance 0)"
    },
    {
     "step": 2,
@@ -50,7 +51,8 @@
     "ref_class": "Soybean_Vein_necrosis_virus",
     "part": "leaf",
     "ref_index": 1,
-    "img": "sage/Soybean_Dise_125/Soybean_Vein_necrosis_virus_Soybean_Dise_126.jpg"
+    "img": "sage/Soybean_Dise_125/Soybean_Vein_necrosis_virus_Soybean_Dise_126.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 24688 (Soybean/Soybean_Vein_Necrosis_Virus/Soybean_Dise_209.jpg, phash distance 0)"
    },
    {
     "step": 6,
@@ -60,7 +62,8 @@
     "ref_class": "Bacterial_Blight",
     "part": "leaf",
     "ref_index": 2,
-    "img": "sage/Soybean_Dise_125/Bacterial_Blight_Soybean_Dise_131.jpg"
+    "img": "sage/Soybean_Dise_125/Bacterial_Blight_Soybean_Dise_131.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 14126 (Soybean/Bacterial_Blight/Soybean_Dise_190.jpg, phash distance 0)"
    },
    {
     "step": 7,
@@ -70,7 +73,8 @@
     "ref_class": "Septoria_brown_spot",
     "part": "leaf",
     "ref_index": 3,
-    "img": "sage/Soybean_Dise_125/Septoria_brown_spot_Soybean_Dise_12.jpg"
+    "img": "sage/Soybean_Dise_125/Septoria_brown_spot_Soybean_Dise_12.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 6822 (Soybean/Septoria_Brown_Spot/Soybean_Dise_3.jpg, phash distance 0)"
    },
    {
     "step": 8,
@@ -80,7 +84,8 @@
     "ref_class": "Frogeye_leaf_spot",
     "part": "leaf",
     "ref_index": 4,
-    "img": "sage/Soybean_Dise_125/Frogeye_leaf_spot_Soybean_Dise_6.jpg"
+    "img": "sage/Soybean_Dise_125/Frogeye_leaf_spot_Soybean_Dise_6.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 24435 (Soybean/Frogeye_Leaf_Spot/Soybean_Dise_204.jpg, phash distance 0)"
    },
    {
     "step": 9,
@@ -90,7 +95,8 @@
     "ref_class": "Soybean_Vein_necrosis_virus",
     "part": "leaf",
     "ref_index": 5,
-    "img": "sage/Soybean_Dise_125/Soybean_Vein_necrosis_virus_Soybean_Dise_139.jpg"
+    "img": null,
+    "hf": "not present in the Hugging Face release (tirtho149/SAGE@737529c); image not shown"
    },
    {
     "step": 10,
@@ -106,7 +112,8 @@
     "ref_class": "Sudden_death_syndrome",
     "part": "leaf",
     "ref_index": 6,
-    "img": "sage/Soybean_Dise_125/Sudden_death_syndrome_Soybean_Dise_39.jpg"
+    "img": "sage/Soybean_Dise_125/Sudden_death_syndrome_Soybean_Dise_39.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 12774 (Soybean/Sudden_Death_Syndrome/Soybean_Dise_195.jpg, phash distance 0)"
    },
    {
     "step": 12,
@@ -116,7 +123,8 @@
     "ref_class": "Cercospora",
     "part": "leaf",
     "ref_index": 7,
-    "img": "sage/Soybean_Dise_125/Cercospora_Soybean_Dise_107.jpg"
+    "img": null,
+    "hf": "not present in the Hugging Face release (tirtho149/SAGE@737529c); image not shown"
    },
    {
     "step": 13,
@@ -126,7 +134,8 @@
     "ref_class": "Bacterial_Pustule",
     "part": "leaf",
     "ref_index": 8,
-    "img": "sage/Soybean_Dise_125/Bacterial_Pustule_Soybean_Dise_11.jpg"
+    "img": "sage/Soybean_Dise_125/Bacterial_Pustule_Soybean_Dise_11.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 6686 (Soybean/Bacterial_Pustule/Soybean_Dise_140.jpg, phash distance 0)"
    },
    {
     "step": 14,
@@ -139,9 +148,10 @@
    "repo": "tirtho149/SAGE",
    "commit": "d13ecec8012d48fceeac043c0f0ff295abbd7148",
    "trace": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/traces/Bacterial_Blight__Soybean_Dise_125.json",
-   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Bacterial_Blight__Soybean_Dise_125.json"
+   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Bacterial_Blight__Soybean_Dise_125.json",
+   "images": "huggingface.co/datasets/tirtho149/SAGE@737529c47294f732e88cc68de037c450fcfbc01f"
   },
-  "images_note": "Images from the SAGE repository (Prepared_Dataset), shown at the request of the SAGE authors; resized, EXIF removed.",
+  "images_note": "Images from the Hugging Face dataset tirtho149/SAGE (rev 737529c, CC BY 4.0), matched to the trace by perceptual hash; references absent from the HF release are not shown.",
   "not_recorded": "Tool results (image contents, part_index text), the system prompt and the user message are not saved by the SAGE harness."
  },
  {
@@ -166,7 +176,8 @@
     "kind": "observe",
     "label": "Observe test image",
     "tool": "Read(classify_5vnwk6u6.jpg)",
-    "img": "sage/Soybean_Dise_21/test.jpg"
+    "img": "sage/Soybean_Dise_21/test.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 24463 (Soybean/Frogeye_Leaf_Spot/Soybean_Dise_172.jpg, phash distance 2)"
    },
    {
     "step": 2,
@@ -195,7 +206,8 @@
     "ref_class": "Frogeye_leaf_spot",
     "part": "leaf",
     "ref_index": 1,
-    "img": "sage/Soybean_Dise_21/Frogeye_leaf_spot_Soybean_Dise_6.jpg"
+    "img": "sage/Soybean_Dise_21/Frogeye_leaf_spot_Soybean_Dise_6.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 24435 (Soybean/Frogeye_Leaf_Spot/Soybean_Dise_204.jpg, phash distance 0)"
    },
    {
     "step": 6,
@@ -211,7 +223,8 @@
     "ref_class": "Septoria_brown_spot",
     "part": "leaf",
     "ref_index": 2,
-    "img": "sage/Soybean_Dise_21/Septoria_brown_spot_Soybean_Dise_12.jpg"
+    "img": "sage/Soybean_Dise_21/Septoria_brown_spot_Soybean_Dise_12.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 6822 (Soybean/Septoria_Brown_Spot/Soybean_Dise_3.jpg, phash distance 0)"
    },
    {
     "step": 8,
@@ -221,7 +234,8 @@
     "ref_class": "Phyllosticta_leaf_spot",
     "part": "leaf",
     "ref_index": 3,
-    "img": "sage/Soybean_Dise_21/Phyllosticta_leaf_spot_Soybean_Dise_18.jpg"
+    "img": "sage/Soybean_Dise_21/Phyllosticta_leaf_spot_Soybean_Dise_18.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 4557 (Soybean/Phyllosticta_Leaf_Spot/Soybean_Dise_187.jpg, phash distance 0)"
    },
    {
     "step": 9,
@@ -231,7 +245,8 @@
     "ref_class": "Bacterial_Blight",
     "part": "leaf",
     "ref_index": 4,
-    "img": "sage/Soybean_Dise_21/Bacterial_Blight_Soybean_Dise_17.jpg"
+    "img": "sage/Soybean_Dise_21/Bacterial_Blight_Soybean_Dise_17.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 14389 (Soybean/Bacterial_Blight/Soybean_Dise_29.jpg, phash distance 0)"
    },
    {
     "step": 10,
@@ -241,7 +256,8 @@
     "ref_class": "Soybean_rust",
     "part": "leaf",
     "ref_index": 5,
-    "img": "sage/Soybean_Dise_21/Soybean_rust_Soybean_Dise_74.jpg"
+    "img": "sage/Soybean_Dise_21/Soybean_rust_Soybean_Dise_74.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 13831 (Soybean/Soybean_Rust/Soybean_Dise_160.jpg, phash distance 0)"
    },
    {
     "step": 11,
@@ -251,7 +267,8 @@
     "ref_class": "Cercospora",
     "part": "leaf",
     "ref_index": 6,
-    "img": "sage/Soybean_Dise_21/Cercospora_Soybean_Dise_93.jpg"
+    "img": "sage/Soybean_Dise_21/Cercospora_Soybean_Dise_93.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 7057 (Soybean/Cercospora/Soybean_Dise_71.jpg, phash distance 0)"
    },
    {
     "step": 12,
@@ -261,7 +278,8 @@
     "ref_class": "Downy_mildew",
     "part": "leaf",
     "ref_index": 7,
-    "img": "sage/Soybean_Dise_21/Downy_mildew_Soybean_Dise_137.jpg"
+    "img": "sage/Soybean_Dise_21/Downy_mildew_Soybean_Dise_137.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 21143 (Soybean/Downy_Mildew/Soybean_Dise_5.jpg, phash distance 0)"
    },
    {
     "step": 13,
@@ -271,7 +289,8 @@
     "ref_class": "Bacterial_Pustule",
     "part": "leaf",
     "ref_index": 8,
-    "img": "sage/Soybean_Dise_21/Bacterial_Pustule_Soybean_Dise_62.jpg"
+    "img": "sage/Soybean_Dise_21/Bacterial_Pustule_Soybean_Dise_62.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00014.parquet row 6904 (Soybean/Bacterial_Pustule/Soybean_Dise_164.jpg, phash distance 0)"
    },
    {
     "step": 14,
@@ -281,7 +300,8 @@
     "ref_class": "Sudden_death_syndrome",
     "part": "leaf",
     "ref_index": 9,
-    "img": "sage/Soybean_Dise_21/Sudden_death_syndrome_Soybean_Dise_39.jpg"
+    "img": "sage/Soybean_Dise_21/Sudden_death_syndrome_Soybean_Dise_39.jpg",
+    "hf": "tirtho149/SAGE@737529c data/train-00039.parquet row 12774 (Soybean/Sudden_Death_Syndrome/Soybean_Dise_195.jpg, phash distance 0)"
    },
    {
     "step": 15,
@@ -294,9 +314,10 @@
    "repo": "tirtho149/SAGE",
    "commit": "d13ecec8012d48fceeac043c0f0ff295abbd7148",
    "trace": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/traces/Frogeye_leaf_spot__Soybean_Dise_21.json",
-   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Frogeye_leaf_spot__Soybean_Dise_21.json"
+   "result": "results/open_agentic/Soybean_Diseases/internet/sonnet/k8/Frogeye_leaf_spot__Soybean_Dise_21.json",
+   "images": "huggingface.co/datasets/tirtho149/SAGE@737529c47294f732e88cc68de037c450fcfbc01f"
   },
-  "images_note": "Images from the SAGE repository (Prepared_Dataset), shown at the request of the SAGE authors; resized, EXIF removed.",
+  "images_note": "Images from the Hugging Face dataset tirtho149/SAGE (rev 737529c, CC BY 4.0), matched to the trace by perceptual hash; references absent from the HF release are not shown.",
   "not_recorded": "Tool results (image contents, part_index text), the system prompt and the user message are not saved by the SAGE harness."
  }
 ]
