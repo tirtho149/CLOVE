@@ -214,7 +214,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
 </head>
 <body>
 <nav class="nav"><div class="in"><a class="brand" href="#top"><img src="clove_logo.png" alt="">CLOVE</a><div class="links">
-<a href="#tldr">TL;DR</a><a href="#abstract">Abstract</a><a href="#setup">Setup</a><a href="#run">Agentic run</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#results">Results</a><a href="#discussion">Discussion</a><a href="#team">Team</a><a href="#bibtex">BibTeX</a></div></div></nav>
+<a href="#tldr">TL;DR</a><a href="#abstract">Abstract</a><a href="#setup">Setup</a><a href="#inaction">In action</a><a href="#run">Agentic run</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#results">Results</a><a href="#discussion">Discussion</a><a href="#team">Team</a><a href="#bibtex">BibTeX</a></div></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div class="venue-row"><span class="badge"><span class="b">Preprint</span>2026</span><span class="tag">Training-free · frozen VLM</span></div>
@@ -237,7 +237,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
     <a class="btn" href="#bibtex"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>BibTeX</a>
   </div>
   <div class="stats">
-    <div class="stat"><div class="n">8</div><div class="l">agricultural data sets<br>pre-registered confirmation</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">agricultural data sets<br>pre-registered confirmation</div></div>
     <div class="stat"><div class="n">12/12</div><div class="l">AgEval subsets audited<br>21 candidates total</div></div>
     <div class="stat"><div class="n">128 KiB</div><div class="l">external memory<br>the only state that changes</div></div>
     <div class="stat"><div class="n">0</div><div class="l">trained parameters<br>Qwen2.5-VL-3B frozen</div></div>
@@ -248,12 +248,12 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
 <section class="sec tint" id="tldr"><div class="wrap">
   <span class="kick">TL;DR</span><h2>Can a frozen VLM keep learning crops, weeds and pests?</h2>
   <div class="hypo"><div class="hd">Hypothesis</div><div class="bd">If retrieval already finds the right class, a frozen vision-language model with a small external memory should be able to keep learning new agricultural classes from five images each, and agentic verification should help it decide.
-  <div class="tl"><b>TL;DR</b>Retrieval finds the class (80% top-3), but the model's own choice collapses (43%). Agentic verification does not repair it. Packing more, smaller references into the same 128&nbsp;KiB helps where the budget binds: <b style="color:var(--leaf);letter-spacing:0;font-size:1rem">+25 points on IP102</b> (p<sub>Holm</sub> = 0.008), and nowhere on few-class sets.</div></div></div>
+  <div class="tl"><b>TL;DR</b>Retrieval finds the class (80% top-3), but the model's own choice collapses (43%). Agentic verification does not repair it. Packing more, smaller references into the same 128&nbsp;KiB helps where the budget binds: <b style="color:var(--leaf);letter-spacing:0;font-size:1rem">+25 points on IP102</b> (p<sub>Holm</sub> = 0.009), and nowhere on few-class sets.</div></div></div>
 </div></section>
 
 <section class="sec" id="abstract"><div class="wrap narrow">
   <span class="kick">Abstract</span><h2>Abstract</h2>
-  <p class="just">CLOVE asks whether a small, locally runnable vision-language model can itself be the classifier when agricultural categories are released over time with five labelled images each, while images of never-taught categories keep arriving. Frozen Qwen2.5-VL-3B-Instruct chooses a released class or UNKNOWN; nothing is trained and only a 128&nbsp;KiB external memory changes. On DeepWeeds development data the true class is in the memory index's top three for 80% of images, but the model's forced choice is right for 43%. In a pre-registered confirmation on never-examined image groups, exhaustive class verification is not confirmed and retrieve-then-verify is not confirmed. A byte-optimised dense memory with retrieve-then-verify (CLOVE-D12) meets the pre-registered rule on 1 of 8 data sets, is lower on 4 and otherwise indistinguishable. Frozen-feature readouts remain stronger in closed-set accuracy. Every arm, including every failed one, is reported.</p>
+  <p class="just">CLOVE asks whether a small, locally runnable vision-language model can itself be the classifier when agricultural categories are released over time with five labelled images each, while images of never-taught categories keep arriving. Frozen Qwen2.5-VL-3B-Instruct chooses a released class or UNKNOWN; nothing is trained and only a 128&nbsp;KiB external memory changes. On DeepWeeds development data the true class is in the memory index's top three for 80% of images, but the model's forced choice is right for 43%. In a pre-registered confirmation on never-examined image groups, exhaustive class verification is not confirmed and retrieve-then-verify is not confirmed. A byte-optimised dense memory with retrieve-then-verify (CLOVE-D12) meets the pre-registered rule on 1 of 9 data sets, is lower on 5 and otherwise indistinguishable. Frozen-feature readouts remain stronger in closed-set accuracy. Every arm, including every failed one, is reported.</p>
 </div></section>
 
 <section class="sec tint" id="setup"><div class="wrap">
@@ -270,6 +270,14 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
     <div class="metric"><b>Calibrated BA</b><span>UNKNOWN below a known-only 95% threshold</span></div>
     <div class="metric"><b>Held-out rejection</b><span>never-taught images answered UNKNOWN</span></div>
   </div>
+</div></section>
+
+<section class="sec tint" id="inaction"><div class="wrap">
+  <span class="kick">Interactive</span><h2>CLOVE in Action</h2>
+  <p class="lead">Step through one verified IP102 run: classes arrive, both memories fill the same 128&nbsp;KiB, the same query reaches uniform and dense memory, and the frozen model decides. A recorded SAGE diagnosis is included for comparison.</p>
+  <div class="fig" style="max-width:900px"><a href="run/" aria-label="Open the interactive run player"><img src="run/videos/agentic_run_preview.gif" alt="Preview of the CLOVE run player stepping through memory, retrieval and decision"></a>
+    <div class="links" style="margin-top:1rem"><a class="btn" href="run/">Open the interactive player</a><a class="btn" href="run/videos/agentic_run.mp4" target="_blank" rel="noopener">Watch the 50 s walkthrough</a><a class="btn" href="run/figures/agentic_run.pdf" target="_blank" rel="noopener">Paper figure (PDF)</a></div>
+    <p>Every tile, byte count, shortlist and probability comes from the logged run. Examples are chosen by a fixed rule (lowest query ID per outcome type), and one query is not evidence for the aggregate result.</p></div>
 </div></section>
 
 <section class="sec" id="run"><div class="wrap">
@@ -291,7 +299,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
       <div class="minis"><div class="mini"><div class="v">0/6</div><div class="l">pre-registered contrasts with a confirmed gain</div></div><div class="mini"><div class="v bad">1</div><div class="l">confirmed loss (retrieve-verify, Insects)</div></div><div class="mini"><div class="v">3</div><div class="l">designs tested</div></div></div>
       <p>Exhaustive per-class verification is not confirmed; retrieve-then-verify is not confirmed.</p></div>
     <div class="rq"><div class="hdr"><span class="id">RQ4</span><span class="tp">Memory optimisation</span><span class="ans part">Where the budget binds</span></div><h3>Does a denser memory help?</h3>
-      <div class="big"><span class="v">+25 pts</span><span class="c">IP102, [+17, +33], p<sub>Holm</sub> = 0.008</span></div><p>Confirmed on 1 of 8 data sets. On few-class sets the uniform memory already fits and the dense memory adds noise.</p>
+      <div class="big"><span class="v">+25 pts</span><span class="c">IP102, [+17, +33], p<sub>Holm</sub> = 0.009</span></div><p>Confirmed on 1 of 9 data sets. On few-class sets the uniform memory already fits and the dense memory adds noise.</p>
       <div class="chips"><span class="chip">same 128 KiB</span><span class="chip">4.5 vs 0.8 images/class on DeepWeeds</span><span class="chip">index never decides</span></div></div>
     <div class="rq wide"><div class="hdr"><span class="id">RQ5</span><span class="tp">Reference</span><span class="ans yes">Yes</span></div><h3>Do frozen-feature readouts do better than any generative arm?</h3>
       <div class="minis"><div class="mini"><div class="v good">66–93%</div><div class="l">closed-set accuracy of NCM, SLDA, FeCAM, RanPAC, TEEN</div></div><div class="mini"><div class="v">same</div><div class="l">frozen Qwen vision features</div></div><div class="mini"><div class="v">≠</div><div class="l">they decide from features, so they are not CLOVE arms</div></div></div>
@@ -332,7 +340,7 @@ footer::before{content:"";display:block;height:3px;background:var(--grad);margin
 <tr><td class='ds'>Rice Leaf Disease Severity (SBRD)</td><td>AgEval loader</td><td class='n'>9</td><td><span class='pill ok'>evaluated</span></td><td class='note'></td></tr>
 <tr><td class='ds'>IP102 (25 classes)</td><td>AgEval loader</td><td class='n'>25</td><td><span class='pill ok'>evaluated</span></td><td class='note'>25 hash-selected classes</td></tr>
 <tr><td class='ds'>Durum Wheat</td><td>AgEval</td><td class='n'>3</td><td><span class='pill ex'>excluded</span></td><td class='note'>each class is frames of one video: 5 independent supports impossible</td></tr>
-<tr><td class='ds'>Yellow Rust 19</td><td>AgEval</td><td class='n'>6</td><td><span class='pill run'>running</span></td><td class='note'>severity grades as classes (ordinal caveat); RAW photos, augmented copies avoided</td></tr>
+<tr><td class='ds'>Yellow Rust 19</td><td>AgEval</td><td class='n'>6</td><td><span class='pill ok'>evaluated</span></td><td class='note'>severity grades as classes (ordinal caveat); RAW photos, augmented copies avoided</td></tr>
 <tr><td class='ds'>FUSARIUM 22</td><td>AgEval</td><td class='n'>5</td><td><span class='pill run'>running</span></td><td class='note'>wilt grades as classes (ordinal caveat)</td></tr>
 <tr><td class='ds'>IDC (iron deficiency chlorosis)</td><td>AgEval</td><td class='n'>4</td><td><span class='pill dev'>development only</span></td><td class='note'>severity ratings; ratings 3-4 have no never-examined groups; rating 5 insufficient</td></tr>
 <tr><td class='ds'>PlantDoc (segmentation)</td><td>AgEval</td><td class='n'>--</td><td><span class='pill ex'>excluded</span></td><td class='note'>segmentation/quantification task: no class labels</td></tr>

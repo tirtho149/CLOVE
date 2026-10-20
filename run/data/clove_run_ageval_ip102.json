@@ -1,0 +1,4403 @@
+{
+ "schema": "clove-run/1",
+ "verified": true,
+ "dataset": "ageval_ip102",
+ "class_order_seed": 42,
+ "cohort": "fresh (never-examined source groups)",
+ "model": {
+  "name": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "frozen": true
+ },
+ "budget_bytes": 131072,
+ "sessions": [
+  [
+   "brown plant hopper",
+   "wheat phloeothrips",
+   "alfalfa weevil",
+   "legume blister beetle",
+   "Ampelophaga",
+   "lytta polita",
+   "yellow cutworm",
+   "Potosiabre vitarsis",
+   "grain spreader thrips",
+   "Ceroplastes rubens"
+  ],
+  [
+   "wheat blossom midge",
+   "Dacus dorsalis(Hendel)",
+   "english grain aphid",
+   "Toxoptera aurantii",
+   "Toxoptera citricidus"
+  ],
+  [
+   "Miridae",
+   "alfalfa plant bug",
+   "Thrips",
+   "Phyllocoptes oleiverus ashmead",
+   "rice leaf roller"
+  ]
+ ],
+ "held_out_never_released": [
+  "aphids",
+  "parathrene regalis",
+  "Sternochetus frigidus",
+  "therioaphis maculata Buckton",
+  "Lawana imitata Melichar"
+ ],
+ "selection_rule": "IP102 is shown because it is the data set with the confirmed aggregate effect. Within it (order 42, last session, known queries), each case is the lowest query ID in its category.",
+ "category_counts_last_session": {
+  "A": 16,
+  "B": 5,
+  "C": 1
+ },
+ "history": [
+  {
+   "session": 0,
+   "released_new": [
+    "brown plant hopper",
+    "wheat phloeothrips",
+    "alfalfa weevil",
+    "legume blister beetle",
+    "Ampelophaga",
+    "lytta polita",
+    "yellow cutworm",
+    "Potosiabre vitarsis",
+    "grain spreader thrips",
+    "Ceroplastes rubens"
+   ],
+   "released_total": 10,
+   "stores": {
+    "B2": {
+     "bytes": {
+      "text_meta": 2357,
+      "images": 79119,
+      "index": 45056,
+      "total": 126532
+     },
+     "n_refs": 11,
+     "snapshot": "4654e9cd97d2abab",
+     "event_head": "ec508ae7d8a127ee25d3cf7163b422750b649bc36aed6d1f5ca5a17118092084",
+     "n_events": 49,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "brown plant hopper",
+       "ref": null,
+       "hash": "25c798820f5f"
+      },
+      {
+       "op": "add",
+       "cls": "wheat phloeothrips",
+       "ref": null,
+       "hash": "0eba057c355d"
+      },
+      {
+       "op": "add",
+       "cls": "alfalfa weevil",
+       "ref": null,
+       "hash": "526028af849f"
+      },
+      {
+       "op": "add",
+       "cls": "legume blister beetle",
+       "ref": null,
+       "hash": "8da96dd2a75a"
+      },
+      {
+       "op": "add",
+       "cls": "Ampelophaga",
+       "ref": null,
+       "hash": "8a63ae113f38"
+      },
+      {
+       "op": "add",
+       "cls": "lytta polita",
+       "ref": null,
+       "hash": "d69ce71f5059"
+      },
+      {
+       "op": "add",
+       "cls": "yellow cutworm",
+       "ref": null,
+       "hash": "593966fd1c33"
+      },
+      {
+       "op": "add",
+       "cls": "Potosiabre vitarsis",
+       "ref": null,
+       "hash": "36910b764350"
+      },
+      {
+       "op": "add",
+       "cls": "grain spreader thrips",
+       "ref": null,
+       "hash": "c47f521031a1"
+      },
+      {
+       "op": "add",
+       "cls": "Ceroplastes rubens",
+       "ref": null,
+       "hash": "222fa8b9bd97"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 18,
+       "hash": "b754389811ca"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 124,
+       "hash": "879630cd5b93"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 531,
+       "hash": "c0d4a029ea95"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 976,
+       "hash": "2d75ba4771c6"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1184,
+       "hash": "643383189183"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1288,
+       "hash": "314861aa5eaf"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1363,
+       "hash": "882ff21099d3"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1466,
+       "hash": "3a66606c534e"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1840,
+       "hash": "4889eafdb039"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1973,
+       "hash": "c854c65e05af"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 31,
+       "hash": "1bcbdbf8b617"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 98,
+       "hash": "70f2280de3fe"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 485,
+       "hash": "057cb0ce2d8d"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 992,
+       "hash": "c64caddf5c94"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1175,
+       "hash": "f18ba6733309"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1355,
+       "hash": "d6bf65c2d61f"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1391,
+       "hash": "261fc61194d4"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1475,
+       "hash": "1f228f636bf5"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1915,
+       "hash": "6a874e613432"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1985,
+       "hash": "b7fe01936b19"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 22,
+       "hash": "4233112ab0c0"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 142,
+       "hash": "1fb1948c08d3"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 500,
+       "hash": "63e3c2f0da54"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 967,
+       "hash": "c77269aab912"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1173,
+       "hash": "719d741f1b37"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1342,
+       "hash": "dfc62a8be4a9"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1374,
+       "hash": "cce718b3cfad"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1479,
+       "hash": "866e940bd883"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1893,
+       "hash": "3dddb16053a8"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1979,
+       "hash": "467419047c51"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 0,
+       "hash": "e4f884d418ef"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 83,
+       "hash": "5333694b153f"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 532,
+       "hash": "8b865e655c5f"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 1010,
+       "hash": "be2aa8b21c74"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1122,
+       "hash": "de2250c75405"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1344,
+       "hash": "8ab03fbd2e60"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1373,
+       "hash": "b3159e6929cb"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1444,
+       "hash": "3e09adb87924"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1892,
+       "hash": "ec508ae7d8a1"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/uniform_t0_1135.jpg",
+       "bytes": 7397,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/uniform_t0_1860.jpg",
+       "bytes": 9409,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/uniform_t0_1025.jpg",
+       "bytes": 9705,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/uniform_t0_1383.jpg",
+       "bytes": 4628,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 30,
+       "img": "img/uniform_t0_30.jpg",
+       "bytes": 4578,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/uniform_t0_1501.jpg",
+       "bytes": 8417,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/uniform_t0_1967.jpg",
+       "bytes": 8994,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1952,
+       "img": "img/uniform_t0_1952.jpg",
+       "bytes": 7153,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 505,
+       "img": "img/uniform_t0_505.jpg",
+       "bytes": 4607,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/uniform_t0_1326.jpg",
+       "bytes": 5035,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 87,
+       "img": "img/uniform_t0_87.jpg",
+       "bytes": 9196,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 18,
+       "img": "img/src_18.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 124,
+       "img": "img/src_124.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 531,
+       "img": "img/src_531.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 976,
+       "img": "img/src_976.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1184,
+       "img": "img/src_1184.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1288,
+       "img": "img/src_1288.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1363,
+       "img": "img/src_1363.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1466,
+       "img": "img/src_1466.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1840,
+       "img": "img/src_1840.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1973,
+       "img": "img/src_1973.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 31,
+       "img": "img/src_31.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 98,
+       "img": "img/src_98.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 485,
+       "img": "img/src_485.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 992,
+       "img": "img/src_992.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1175,
+       "img": "img/src_1175.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1355,
+       "img": "img/src_1355.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1391,
+       "img": "img/src_1391.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1475,
+       "img": "img/src_1475.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1915,
+       "img": "img/src_1915.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1985,
+       "img": "img/src_1985.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 22,
+       "img": "img/src_22.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 142,
+       "img": "img/src_142.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 500,
+       "img": "img/src_500.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 967,
+       "img": "img/src_967.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1173,
+       "img": "img/src_1173.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1342,
+       "img": "img/src_1342.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1374,
+       "img": "img/src_1374.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1479,
+       "img": "img/src_1479.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1893,
+       "img": "img/src_1893.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1979,
+       "img": "img/src_1979.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 0,
+       "img": "img/src_0.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 83,
+       "img": "img/src_83.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 532,
+       "img": "img/src_532.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1010,
+       "img": "img/src_1010.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1122,
+       "img": "img/src_1122.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1344,
+       "img": "img/src_1344.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1373,
+       "img": "img/src_1373.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1444,
+       "img": "img/src_1444.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1892,
+       "img": "img/src_1892.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    },
+    "D12": {
+     "bytes": {
+      "text_meta": 2550,
+      "images": 120733,
+      "index": 5984,
+      "total": 129267
+     },
+     "n_refs": 46,
+     "snapshot": "8464adfb7f0e2a75",
+     "event_head": "2d75ba4771c6c66350e367e92193a25bc2f1d2e93858e5fe12514036225a19d6",
+     "n_events": 14,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "brown plant hopper",
+       "ref": null,
+       "hash": "25c798820f5f"
+      },
+      {
+       "op": "add",
+       "cls": "wheat phloeothrips",
+       "ref": null,
+       "hash": "0eba057c355d"
+      },
+      {
+       "op": "add",
+       "cls": "alfalfa weevil",
+       "ref": null,
+       "hash": "526028af849f"
+      },
+      {
+       "op": "add",
+       "cls": "legume blister beetle",
+       "ref": null,
+       "hash": "8da96dd2a75a"
+      },
+      {
+       "op": "add",
+       "cls": "Ampelophaga",
+       "ref": null,
+       "hash": "8a63ae113f38"
+      },
+      {
+       "op": "add",
+       "cls": "lytta polita",
+       "ref": null,
+       "hash": "d69ce71f5059"
+      },
+      {
+       "op": "add",
+       "cls": "yellow cutworm",
+       "ref": null,
+       "hash": "593966fd1c33"
+      },
+      {
+       "op": "add",
+       "cls": "Potosiabre vitarsis",
+       "ref": null,
+       "hash": "36910b764350"
+      },
+      {
+       "op": "add",
+       "cls": "grain spreader thrips",
+       "ref": null,
+       "hash": "c47f521031a1"
+      },
+      {
+       "op": "add",
+       "cls": "Ceroplastes rubens",
+       "ref": null,
+       "hash": "222fa8b9bd97"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 18,
+       "hash": "b754389811ca"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 124,
+       "hash": "879630cd5b93"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 531,
+       "hash": "c0d4a029ea95"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 976,
+       "hash": "2d75ba4771c6"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/dense_t0_1135.jpg",
+       "bytes": 2533,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1122,
+       "img": "img/dense_t0_1122.jpg",
+       "bytes": 3150,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1173,
+       "img": "img/dense_t0_1173.jpg",
+       "bytes": 2217,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1175,
+       "img": "img/dense_t0_1175.jpg",
+       "bytes": 3610,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1184,
+       "img": "img/dense_t0_1184.jpg",
+       "bytes": 2494,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/dense_t0_1860.jpg",
+       "bytes": 3094,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1892,
+       "img": "img/dense_t0_1892.jpg",
+       "bytes": 3589,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1893,
+       "img": "img/dense_t0_1893.jpg",
+       "bytes": 2513,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1915,
+       "img": "img/dense_t0_1915.jpg",
+       "bytes": 1011,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1840,
+       "img": "img/dense_t0_1840.jpg",
+       "bytes": 3493,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/dense_t0_1025.jpg",
+       "bytes": 3169,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1010,
+       "img": "img/dense_t0_1010.jpg",
+       "bytes": 3046,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 967,
+       "img": "img/dense_t0_967.jpg",
+       "bytes": 3321,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 992,
+       "img": "img/dense_t0_992.jpg",
+       "bytes": 2809,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/dense_t0_1383.jpg",
+       "bytes": 1816,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1373,
+       "img": "img/dense_t0_1373.jpg",
+       "bytes": 2419,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1374,
+       "img": "img/dense_t0_1374.jpg",
+       "bytes": 2040,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1391,
+       "img": "img/dense_t0_1391.jpg",
+       "bytes": 2687,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1363,
+       "img": "img/dense_t0_1363.jpg",
+       "bytes": 1718,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 30,
+       "img": "img/dense_t0_30.jpg",
+       "bytes": 1779,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 0,
+       "img": "img/dense_t0_0.jpg",
+       "bytes": 2517,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 22,
+       "img": "img/dense_t0_22.jpg",
+       "bytes": 1859,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 31,
+       "img": "img/dense_t0_31.jpg",
+       "bytes": 2335,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/dense_t0_1501.jpg",
+       "bytes": 2735,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1444,
+       "img": "img/dense_t0_1444.jpg",
+       "bytes": 2037,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1479,
+       "img": "img/dense_t0_1479.jpg",
+       "bytes": 4028,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1475,
+       "img": "img/dense_t0_1475.jpg",
+       "bytes": 2191,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1466,
+       "img": "img/dense_t0_1466.jpg",
+       "bytes": 2632,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/dense_t0_1967.jpg",
+       "bytes": 3158,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1952,
+       "img": "img/dense_t0_1952.jpg",
+       "bytes": 2319,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1979,
+       "img": "img/dense_t0_1979.jpg",
+       "bytes": 2596,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1985,
+       "img": "img/dense_t0_1985.jpg",
+       "bytes": 3690,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1973,
+       "img": "img/dense_t0_1973.jpg",
+       "bytes": 1539,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 505,
+       "img": "img/dense_t0_505.jpg",
+       "bytes": 1609,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 532,
+       "img": "img/dense_t0_532.jpg",
+       "bytes": 2049,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 500,
+       "img": "img/dense_t0_500.jpg",
+       "bytes": 2877,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 485,
+       "img": "img/dense_t0_485.jpg",
+       "bytes": 3851,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/dense_t0_1326.jpg",
+       "bytes": 1636,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1344,
+       "img": "img/dense_t0_1344.jpg",
+       "bytes": 3898,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1342,
+       "img": "img/dense_t0_1342.jpg",
+       "bytes": 2568,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1355,
+       "img": "img/dense_t0_1355.jpg",
+       "bytes": 2996,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1288,
+       "img": "img/dense_t0_1288.jpg",
+       "bytes": 2198,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 87,
+       "img": "img/dense_t0_87.jpg",
+       "bytes": 2962,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 83,
+       "img": "img/dense_t0_83.jpg",
+       "bytes": 3063,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 142,
+       "img": "img/dense_t0_142.jpg",
+       "bytes": 2906,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 98,
+       "img": "img/dense_t0_98.jpg",
+       "bytes": 1976,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 18,
+       "img": "img/src_18.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 124,
+       "img": "img/src_124.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 531,
+       "img": "img/src_531.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 976,
+       "img": "img/src_976.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "session": 1,
+   "released_new": [
+    "wheat blossom midge",
+    "Dacus dorsalis(Hendel)",
+    "english grain aphid",
+    "Toxoptera aurantii",
+    "Toxoptera citricidus"
+   ],
+   "released_total": 15,
+   "stores": {
+    "B2": {
+     "bytes": {
+      "text_meta": 3473,
+      "images": 81485,
+      "index": 40960,
+      "total": 125918
+     },
+     "n_refs": 10,
+     "snapshot": "1d1e02a95c2cad85",
+     "event_head": "e95d1b1c6d668ef190541c485f72ee02384bf594c7e9d08c3c396bc3deaf3b23",
+     "n_events": 80,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "wheat blossom midge",
+       "ref": null,
+       "hash": "5d87791d322a"
+      },
+      {
+       "op": "add",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": null,
+       "hash": "53080d66a39f"
+      },
+      {
+       "op": "add",
+       "cls": "english grain aphid",
+       "ref": null,
+       "hash": "5aae52c1a3a6"
+      },
+      {
+       "op": "add",
+       "cls": "Toxoptera aurantii",
+       "ref": null,
+       "hash": "d241c7fa156f"
+      },
+      {
+       "op": "add",
+       "cls": "Toxoptera citricidus",
+       "ref": null,
+       "hash": "b7f93e72ff02"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 166,
+       "hash": "bb3c2d824457"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 778,
+       "hash": "673e980f3c1d"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 855,
+       "hash": "928ee4a352a2"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1264,
+       "hash": "127b4e0bb68e"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1783,
+       "hash": "feee1289e9fb"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 169,
+       "hash": "70b28d3e1137"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 798,
+       "hash": "417359930e9c"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 850,
+       "hash": "68f6c0a97e0b"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1271,
+       "hash": "49ffb00a82ee"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1765,
+       "hash": "1faa1f0b5ebf"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 177,
+       "hash": "f4b81f7a3855"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 760,
+       "hash": "2fc1a56c8ca1"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 835,
+       "hash": "4751f95b73d6"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1266,
+       "hash": "907e4a7b53fc"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1795,
+       "hash": "f17816c9e755"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 173,
+       "hash": "b93483e9fc72"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 735,
+       "hash": "40ee4ccc0f89"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 873,
+       "hash": "4dfa8494e127"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1219,
+       "hash": "902c25f3fb2c"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1793,
+       "hash": "2defd7a110a6"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1952,
+       "hash": "362c521cdaa7"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 30,
+       "hash": "10addcc53f4a"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 87,
+       "hash": "a171b9e04b9f"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 188,
+       "hash": "298183469abf"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 505,
+       "hash": "7c794c15ea4b"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 782,
+       "hash": "e95d1b1c6d66"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/uniform_t1_1135.jpg",
+       "bytes": 7397,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/uniform_t1_1860.jpg",
+       "bytes": 9409,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/uniform_t1_1025.jpg",
+       "bytes": 9705,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/uniform_t1_1383.jpg",
+       "bytes": 4628,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/uniform_t1_1501.jpg",
+       "bytes": 8417,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/uniform_t1_1967.jpg",
+       "bytes": 8994,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/uniform_t1_1326.jpg",
+       "bytes": 5035,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1826,
+       "img": "img/uniform_t1_1826.jpg",
+       "bytes": 8274,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1240,
+       "img": "img/uniform_t1_1240.jpg",
+       "bytes": 8232,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 859,
+       "img": "img/uniform_t1_859.jpg",
+       "bytes": 11394,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 166,
+       "img": "img/src_166.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 778,
+       "img": "img/src_778.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 855,
+       "img": "img/src_855.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1264,
+       "img": "img/src_1264.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1783,
+       "img": "img/src_1783.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 169,
+       "img": "img/src_169.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 798,
+       "img": "img/src_798.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 850,
+       "img": "img/src_850.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1271,
+       "img": "img/src_1271.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1765,
+       "img": "img/src_1765.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 177,
+       "img": "img/src_177.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 760,
+       "img": "img/src_760.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 835,
+       "img": "img/src_835.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1266,
+       "img": "img/src_1266.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1795,
+       "img": "img/src_1795.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 173,
+       "img": "img/src_173.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 735,
+       "img": "img/src_735.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 873,
+       "img": "img/src_873.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1219,
+       "img": "img/src_1219.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1793,
+       "img": "img/src_1793.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1952,
+       "img": "img/src_1952.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 30,
+       "img": "img/src_30.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 87,
+       "img": "img/src_87.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 188,
+       "img": "img/src_188.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 505,
+       "img": "img/src_505.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 782,
+       "img": "img/src_782.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    },
+    "D12": {
+     "bytes": {
+      "text_meta": 3649,
+      "images": 119919,
+      "index": 5854,
+      "total": 129422
+     },
+     "n_refs": 45,
+     "snapshot": "9ea2c51741aa39d5",
+     "event_head": "ce51353db31df5730ae4dafd3346e9aca4eaf3892abbee9128a1a914a81ef6d0",
+     "n_events": 45,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "wheat blossom midge",
+       "ref": null,
+       "hash": "4ac66b3543ac"
+      },
+      {
+       "op": "add",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": null,
+       "hash": "f5a3f660b11d"
+      },
+      {
+       "op": "add",
+       "cls": "english grain aphid",
+       "ref": null,
+       "hash": "fdd597a1f883"
+      },
+      {
+       "op": "add",
+       "cls": "Toxoptera aurantii",
+       "ref": null,
+       "hash": "6b03ac5a9136"
+      },
+      {
+       "op": "add",
+       "cls": "Toxoptera citricidus",
+       "ref": null,
+       "hash": "c0e2ee9bfc1e"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 166,
+       "hash": "406b9a85b25e"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 778,
+       "hash": "be4b2e009e5f"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 855,
+       "hash": "ec2ee7d41999"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1184,
+       "hash": "3f58319d2aaf"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1264,
+       "hash": "f247d418117e"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1288,
+       "hash": "1ab8bef59886"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1363,
+       "hash": "9cbd8b0d8086"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1466,
+       "hash": "f87659272241"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1783,
+       "hash": "a9f884ee7fab"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1840,
+       "hash": "47486047df2c"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1973,
+       "hash": "619b2a3648f2"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 31,
+       "hash": "dcfb0c90a8f3"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 98,
+       "hash": "57228f64ab81"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 169,
+       "hash": "5401e7a2d54a"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 485,
+       "hash": "4bee0b41bcb5"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 798,
+       "hash": "706e91e43461"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 850,
+       "hash": "e4dc46955d55"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 992,
+       "hash": "d4c4efe6befb"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1175,
+       "hash": "721ec0c2f135"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1271,
+       "hash": "667ed3eb9136"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1355,
+       "hash": "e56071e52862"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1391,
+       "hash": "a2efd2af6430"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1475,
+       "hash": "bc2bf24fcc0a"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat blossom midge",
+       "ref": 1765,
+       "hash": "23b6262ec870"
+      },
+      {
+       "op": "evict",
+       "cls": "wheat phloeothrips",
+       "ref": 1915,
+       "hash": "c017d4126019"
+      },
+      {
+       "op": "evict",
+       "cls": "yellow cutworm",
+       "ref": 1985,
+       "hash": "ce51353db31d"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/dense_t1_1135.jpg",
+       "bytes": 2533,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1122,
+       "img": "img/dense_t1_1122.jpg",
+       "bytes": 3150,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1173,
+       "img": "img/dense_t1_1173.jpg",
+       "bytes": 2217,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/dense_t1_1860.jpg",
+       "bytes": 3094,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1892,
+       "img": "img/dense_t1_1892.jpg",
+       "bytes": 3589,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1893,
+       "img": "img/dense_t1_1893.jpg",
+       "bytes": 2513,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/dense_t1_1025.jpg",
+       "bytes": 3169,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1010,
+       "img": "img/dense_t1_1010.jpg",
+       "bytes": 3046,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 967,
+       "img": "img/dense_t1_967.jpg",
+       "bytes": 3321,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/dense_t1_1383.jpg",
+       "bytes": 1816,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1373,
+       "img": "img/dense_t1_1373.jpg",
+       "bytes": 2419,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1374,
+       "img": "img/dense_t1_1374.jpg",
+       "bytes": 2040,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 30,
+       "img": "img/dense_t1_30.jpg",
+       "bytes": 1779,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 0,
+       "img": "img/dense_t1_0.jpg",
+       "bytes": 2517,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 22,
+       "img": "img/dense_t1_22.jpg",
+       "bytes": 1859,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/dense_t1_1501.jpg",
+       "bytes": 2735,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1444,
+       "img": "img/dense_t1_1444.jpg",
+       "bytes": 2037,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1479,
+       "img": "img/dense_t1_1479.jpg",
+       "bytes": 4028,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/dense_t1_1967.jpg",
+       "bytes": 3158,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1952,
+       "img": "img/dense_t1_1952.jpg",
+       "bytes": 2319,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1979,
+       "img": "img/dense_t1_1979.jpg",
+       "bytes": 2596,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 505,
+       "img": "img/dense_t1_505.jpg",
+       "bytes": 1609,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 532,
+       "img": "img/dense_t1_532.jpg",
+       "bytes": 2049,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 500,
+       "img": "img/dense_t1_500.jpg",
+       "bytes": 2877,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/dense_t1_1326.jpg",
+       "bytes": 1636,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1344,
+       "img": "img/dense_t1_1344.jpg",
+       "bytes": 3898,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1342,
+       "img": "img/dense_t1_1342.jpg",
+       "bytes": 2568,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 87,
+       "img": "img/dense_t1_87.jpg",
+       "bytes": 2962,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 83,
+       "img": "img/dense_t1_83.jpg",
+       "bytes": 3063,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 142,
+       "img": "img/dense_t1_142.jpg",
+       "bytes": 2906,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1826,
+       "img": "img/dense_t1_1826.jpg",
+       "bytes": 2814,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1793,
+       "img": "img/dense_t1_1793.jpg",
+       "bytes": 2711,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1795,
+       "img": "img/dense_t1_1795.jpg",
+       "bytes": 2862,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 188,
+       "img": "img/dense_t1_188.jpg",
+       "bytes": 3055,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 173,
+       "img": "img/dense_t1_173.jpg",
+       "bytes": 1699,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 177,
+       "img": "img/dense_t1_177.jpg",
+       "bytes": 2285,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1240,
+       "img": "img/dense_t1_1240.jpg",
+       "bytes": 2801,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1219,
+       "img": "img/dense_t1_1219.jpg",
+       "bytes": 3234,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1266,
+       "img": "img/dense_t1_1266.jpg",
+       "bytes": 3064,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 782,
+       "img": "img/dense_t1_782.jpg",
+       "bytes": 2659,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 735,
+       "img": "img/dense_t1_735.jpg",
+       "bytes": 2351,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 760,
+       "img": "img/dense_t1_760.jpg",
+       "bytes": 2386,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 859,
+       "img": "img/dense_t1_859.jpg",
+       "bytes": 3858,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 873,
+       "img": "img/dense_t1_873.jpg",
+       "bytes": 2706,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 835,
+       "img": "img/dense_t1_835.jpg",
+       "bytes": 1931,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 166,
+       "img": "img/src_166.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 778,
+       "img": "img/src_778.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 855,
+       "img": "img/src_855.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1184,
+       "img": "img/src_1184.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1264,
+       "img": "img/src_1264.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1288,
+       "img": "img/src_1288.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1363,
+       "img": "img/src_1363.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1466,
+       "img": "img/src_1466.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1783,
+       "img": "img/src_1783.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1840,
+       "img": "img/src_1840.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1973,
+       "img": "img/src_1973.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 31,
+       "img": "img/src_31.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 98,
+       "img": "img/src_98.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 169,
+       "img": "img/src_169.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 485,
+       "img": "img/src_485.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 798,
+       "img": "img/src_798.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 850,
+       "img": "img/src_850.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 992,
+       "img": "img/src_992.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1175,
+       "img": "img/src_1175.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1271,
+       "img": "img/src_1271.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1355,
+       "img": "img/src_1355.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1391,
+       "img": "img/src_1391.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1475,
+       "img": "img/src_1475.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1765,
+       "img": "img/src_1765.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1915,
+       "img": "img/src_1915.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1985,
+       "img": "img/src_1985.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "session": 2,
+   "released_new": [
+    "Miridae",
+    "alfalfa plant bug",
+    "Thrips",
+    "Phyllocoptes oleiverus ashmead",
+    "rice leaf roller"
+   ],
+   "released_total": 20,
+   "stores": {
+    "B2": {
+     "bytes": {
+      "text_meta": 4691,
+      "images": 77616,
+      "index": 40960,
+      "total": 123267
+     },
+     "n_refs": 10,
+     "snapshot": "a9f5eddda2f096bc",
+     "event_head": "00410648b3406d51febfa7a1837ca1c88a1dd3b3f86eaf291dff55350d12d999",
+     "n_events": 110,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "Miridae",
+       "ref": null,
+       "hash": "cfb00381d35f"
+      },
+      {
+       "op": "add",
+       "cls": "alfalfa plant bug",
+       "ref": null,
+       "hash": "8bdd64a21fba"
+      },
+      {
+       "op": "add",
+       "cls": "Thrips",
+       "ref": null,
+       "hash": "08dd2ccc8fca"
+      },
+      {
+       "op": "add",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": null,
+       "hash": "9e5167314305"
+      },
+      {
+       "op": "add",
+       "cls": "rice leaf roller",
+       "ref": null,
+       "hash": "752916361102"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 376,
+       "hash": "c9fa992bc692"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 460,
+       "hash": "ce781bad4aae"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 692,
+       "hash": "013e33f2aaed"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 935,
+       "hash": "4a3ecd3c0acd"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1640,
+       "hash": "558eb6e0c6f3"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 334,
+       "hash": "9219ea8a2bc5"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 419,
+       "hash": "c49fb6fb313d"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 665,
+       "hash": "d258a6e0c4c5"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 912,
+       "hash": "3e27998c2720"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1629,
+       "hash": "5eca3b2b2df1"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 387,
+       "hash": "6063fe240931"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 412,
+       "hash": "9265c7cbea6d"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 701,
+       "hash": "fd64660f6538"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 936,
+       "hash": "8df4e15b7c12"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1611,
+       "hash": "e6df4453ba74"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 361,
+       "hash": "f61fd91acbfc"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 430,
+       "hash": "83643a110271"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 646,
+       "hash": "9434b9ab5a53"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 944,
+       "hash": "3535d71b609d"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1664,
+       "hash": "1de984f75699"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 324,
+       "hash": "2e42d7777971"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 431,
+       "hash": "72ff6bbf819a"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 696,
+       "hash": "f688ec051587"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 859,
+       "hash": "915260d5c940"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 910,
+       "hash": "00410648b340"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/uniform_t2_1135.jpg",
+       "bytes": 7397,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/uniform_t2_1860.jpg",
+       "bytes": 9409,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/uniform_t2_1025.jpg",
+       "bytes": 9705,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/uniform_t2_1383.jpg",
+       "bytes": 4628,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/uniform_t2_1501.jpg",
+       "bytes": 8417,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/uniform_t2_1967.jpg",
+       "bytes": 8994,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/uniform_t2_1326.jpg",
+       "bytes": 5035,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1826,
+       "img": "img/uniform_t2_1826.jpg",
+       "bytes": 8274,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1240,
+       "img": "img/uniform_t2_1240.jpg",
+       "bytes": 8232,
+       "state": "stored"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1670,
+       "img": "img/uniform_t2_1670.jpg",
+       "bytes": 7525,
+       "state": "stored"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 376,
+       "img": "img/src_376.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 460,
+       "img": "img/src_460.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 692,
+       "img": "img/src_692.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 935,
+       "img": "img/src_935.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1640,
+       "img": "img/src_1640.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 334,
+       "img": "img/src_334.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 419,
+       "img": "img/src_419.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 665,
+       "img": "img/src_665.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 912,
+       "img": "img/src_912.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1629,
+       "img": "img/src_1629.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 387,
+       "img": "img/src_387.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 412,
+       "img": "img/src_412.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 701,
+       "img": "img/src_701.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 936,
+       "img": "img/src_936.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1611,
+       "img": "img/src_1611.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 361,
+       "img": "img/src_361.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 430,
+       "img": "img/src_430.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 646,
+       "img": "img/src_646.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 944,
+       "img": "img/src_944.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1664,
+       "img": "img/src_1664.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 324,
+       "img": "img/src_324.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 431,
+       "img": "img/src_431.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 696,
+       "img": "img/src_696.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 859,
+       "img": "img/src_859.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 910,
+       "img": "img/src_910.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    },
+    "D12": {
+     "bytes": {
+      "text_meta": 4850,
+      "images": 117742,
+      "index": 5724,
+      "total": 128316
+     },
+     "n_refs": 44,
+     "snapshot": "91c884b75808cb4a",
+     "event_head": "30f083669f183b9809a3e6ca5c1c119c20d080f552eb8533745d0095f25bf6f1",
+     "n_events": 76,
+     "events_this_session": [
+      {
+       "op": "add",
+       "cls": "Miridae",
+       "ref": null,
+       "hash": "5e23b986de53"
+      },
+      {
+       "op": "add",
+       "cls": "alfalfa plant bug",
+       "ref": null,
+       "hash": "e2de06d82e43"
+      },
+      {
+       "op": "add",
+       "cls": "Thrips",
+       "ref": null,
+       "hash": "bc4b4395004f"
+      },
+      {
+       "op": "add",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": null,
+       "hash": "1dab3643b21e"
+      },
+      {
+       "op": "add",
+       "cls": "rice leaf roller",
+       "ref": null,
+       "hash": "0977af1ee54f"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 376,
+       "hash": "6fce46bfd004"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 460,
+       "hash": "3ff58ef15869"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 692,
+       "hash": "07df1a42c65a"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 935,
+       "hash": "1a43fb9012c9"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1640,
+       "hash": "ff6d16763430"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 334,
+       "hash": "c727d27b1e25"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 419,
+       "hash": "32b8ecdb3356"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 665,
+       "hash": "ed84a654c028"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 912,
+       "hash": "8edf9a35f22c"
+      },
+      {
+       "op": "evict",
+       "cls": "rice leaf roller",
+       "ref": 1629,
+       "hash": "fe55105528b1"
+      },
+      {
+       "op": "evict",
+       "cls": "Ampelophaga",
+       "ref": 22,
+       "hash": "b390e133ff38"
+      },
+      {
+       "op": "evict",
+       "cls": "Ceroplastes rubens",
+       "ref": 142,
+       "hash": "76a4dec280e2"
+      },
+      {
+       "op": "evict",
+       "cls": "Dacus dorsalis(Hendel)",
+       "ref": 177,
+       "hash": "2606c5a06bd1"
+      },
+      {
+       "op": "evict",
+       "cls": "Miridae",
+       "ref": 387,
+       "hash": "953ff58dbb6d"
+      },
+      {
+       "op": "evict",
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "ref": 412,
+       "hash": "59bf45f50f55"
+      },
+      {
+       "op": "evict",
+       "cls": "Potosiabre vitarsis",
+       "ref": 500,
+       "hash": "51cd6900eec0"
+      },
+      {
+       "op": "evict",
+       "cls": "Thrips",
+       "ref": 701,
+       "hash": "3c84b436fb4c"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera aurantii",
+       "ref": 760,
+       "hash": "68a6d600806d"
+      },
+      {
+       "op": "evict",
+       "cls": "Toxoptera citricidus",
+       "ref": 835,
+       "hash": "ad8afe85a0dd"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa plant bug",
+       "ref": 936,
+       "hash": "ff8b23ee03b1"
+      },
+      {
+       "op": "evict",
+       "cls": "alfalfa weevil",
+       "ref": 967,
+       "hash": "026f0e4eabae"
+      },
+      {
+       "op": "evict",
+       "cls": "brown plant hopper",
+       "ref": 1173,
+       "hash": "1472a025465d"
+      },
+      {
+       "op": "evict",
+       "cls": "english grain aphid",
+       "ref": 1266,
+       "hash": "c4a47fbb3ab2"
+      },
+      {
+       "op": "evict",
+       "cls": "grain spreader thrips",
+       "ref": 1342,
+       "hash": "48c2bd47c875"
+      },
+      {
+       "op": "evict",
+       "cls": "legume blister beetle",
+       "ref": 1374,
+       "hash": "ec1251584a06"
+      },
+      {
+       "op": "evict",
+       "cls": "lytta polita",
+       "ref": 1479,
+       "hash": "30f083669f18"
+      }
+     ],
+     "tiles": [
+      {
+       "cls": "brown plant hopper",
+       "sid": 1135,
+       "img": "img/dense_t2_1135.jpg",
+       "bytes": 2533,
+       "state": "stored"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1122,
+       "img": "img/dense_t2_1122.jpg",
+       "bytes": 3150,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1860,
+       "img": "img/dense_t2_1860.jpg",
+       "bytes": 3094,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1892,
+       "img": "img/dense_t2_1892.jpg",
+       "bytes": 3589,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat phloeothrips",
+       "sid": 1893,
+       "img": "img/dense_t2_1893.jpg",
+       "bytes": 2513,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1025,
+       "img": "img/dense_t2_1025.jpg",
+       "bytes": 3169,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 1010,
+       "img": "img/dense_t2_1010.jpg",
+       "bytes": 3046,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1383,
+       "img": "img/dense_t2_1383.jpg",
+       "bytes": 1816,
+       "state": "stored"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1373,
+       "img": "img/dense_t2_1373.jpg",
+       "bytes": 2419,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 30,
+       "img": "img/dense_t2_30.jpg",
+       "bytes": 1779,
+       "state": "stored"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 0,
+       "img": "img/dense_t2_0.jpg",
+       "bytes": 2517,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1501,
+       "img": "img/dense_t2_1501.jpg",
+       "bytes": 2735,
+       "state": "stored"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1444,
+       "img": "img/dense_t2_1444.jpg",
+       "bytes": 2037,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1967,
+       "img": "img/dense_t2_1967.jpg",
+       "bytes": 3158,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1952,
+       "img": "img/dense_t2_1952.jpg",
+       "bytes": 2319,
+       "state": "stored"
+      },
+      {
+       "cls": "yellow cutworm",
+       "sid": 1979,
+       "img": "img/dense_t2_1979.jpg",
+       "bytes": 2596,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 505,
+       "img": "img/dense_t2_505.jpg",
+       "bytes": 1609,
+       "state": "stored"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 532,
+       "img": "img/dense_t2_532.jpg",
+       "bytes": 2049,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1326,
+       "img": "img/dense_t2_1326.jpg",
+       "bytes": 1636,
+       "state": "stored"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1344,
+       "img": "img/dense_t2_1344.jpg",
+       "bytes": 3898,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 87,
+       "img": "img/dense_t2_87.jpg",
+       "bytes": 2962,
+       "state": "stored"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 83,
+       "img": "img/dense_t2_83.jpg",
+       "bytes": 3063,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1826,
+       "img": "img/dense_t2_1826.jpg",
+       "bytes": 2814,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1793,
+       "img": "img/dense_t2_1793.jpg",
+       "bytes": 2711,
+       "state": "stored"
+      },
+      {
+       "cls": "wheat blossom midge",
+       "sid": 1795,
+       "img": "img/dense_t2_1795.jpg",
+       "bytes": 2862,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 188,
+       "img": "img/dense_t2_188.jpg",
+       "bytes": 3055,
+       "state": "stored"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 173,
+       "img": "img/dense_t2_173.jpg",
+       "bytes": 1699,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1240,
+       "img": "img/dense_t2_1240.jpg",
+       "bytes": 2801,
+       "state": "stored"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1219,
+       "img": "img/dense_t2_1219.jpg",
+       "bytes": 3234,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 782,
+       "img": "img/dense_t2_782.jpg",
+       "bytes": 2659,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 735,
+       "img": "img/dense_t2_735.jpg",
+       "bytes": 2351,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 859,
+       "img": "img/dense_t2_859.jpg",
+       "bytes": 3858,
+       "state": "stored"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 873,
+       "img": "img/dense_t2_873.jpg",
+       "bytes": 2706,
+       "state": "stored"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 324,
+       "img": "img/dense_t2_324.jpg",
+       "bytes": 2072,
+       "state": "stored"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 361,
+       "img": "img/dense_t2_361.jpg",
+       "bytes": 1676,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 910,
+       "img": "img/dense_t2_910.jpg",
+       "bytes": 2186,
+       "state": "stored"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 944,
+       "img": "img/dense_t2_944.jpg",
+       "bytes": 2017,
+       "state": "stored"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 696,
+       "img": "img/dense_t2_696.jpg",
+       "bytes": 2563,
+       "state": "stored"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 646,
+       "img": "img/dense_t2_646.jpg",
+       "bytes": 2968,
+       "state": "stored"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 431,
+       "img": "img/dense_t2_431.jpg",
+       "bytes": 3290,
+       "state": "stored"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 430,
+       "img": "img/dense_t2_430.jpg",
+       "bytes": 3824,
+       "state": "stored"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1670,
+       "img": "img/dense_t2_1670.jpg",
+       "bytes": 2520,
+       "state": "stored"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1664,
+       "img": "img/dense_t2_1664.jpg",
+       "bytes": 3584,
+       "state": "stored"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1611,
+       "img": "img/dense_t2_1611.jpg",
+       "bytes": 2605,
+       "state": "stored"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 376,
+       "img": "img/src_376.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 460,
+       "img": "img/src_460.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 692,
+       "img": "img/src_692.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 935,
+       "img": "img/src_935.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1640,
+       "img": "img/src_1640.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 334,
+       "img": "img/src_334.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 419,
+       "img": "img/src_419.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 665,
+       "img": "img/src_665.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 912,
+       "img": "img/src_912.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "rice leaf roller",
+       "sid": 1629,
+       "img": "img/src_1629.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ampelophaga",
+       "sid": 22,
+       "img": "img/src_22.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Ceroplastes rubens",
+       "sid": 142,
+       "img": "img/src_142.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Dacus dorsalis(Hendel)",
+       "sid": 177,
+       "img": "img/src_177.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Miridae",
+       "sid": 387,
+       "img": "img/src_387.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Phyllocoptes oleiverus ashmead",
+       "sid": 412,
+       "img": "img/src_412.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Potosiabre vitarsis",
+       "sid": 500,
+       "img": "img/src_500.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Thrips",
+       "sid": 701,
+       "img": "img/src_701.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera aurantii",
+       "sid": 760,
+       "img": "img/src_760.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "Toxoptera citricidus",
+       "sid": 835,
+       "img": "img/src_835.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa plant bug",
+       "sid": 936,
+       "img": "img/src_936.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "alfalfa weevil",
+       "sid": 967,
+       "img": "img/src_967.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "brown plant hopper",
+       "sid": 1173,
+       "img": "img/src_1173.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "english grain aphid",
+       "sid": 1266,
+       "img": "img/src_1266.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "grain spreader thrips",
+       "sid": 1342,
+       "img": "img/src_1342.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "legume blister beetle",
+       "sid": 1374,
+       "img": "img/src_1374.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      },
+      {
+       "cls": "lytta polita",
+       "sid": 1479,
+       "img": "img/src_1479.jpg",
+       "bytes": null,
+       "state": "evicted",
+       "note": "evicted at this session; image re-rendered from the locked source for display"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case": "A",
+   "query_id": "ageval_ip102:41",
+   "group": 41,
+   "query_img": "img/query_41.jpg",
+   "eval_only": {
+    "gold": "Ampelophaga",
+    "gold_in_D12_shortlist": true,
+    "gold_in_B2_evidence": false,
+    "D12_correct": true,
+    "B2_correct": false
+   },
+   "B2": {
+    "pred": "UNKNOWN",
+    "known_score": 0.05317,
+    "probs": [
+     {
+      "option": "UNKNOWN",
+      "p": 0.94683
+     },
+     {
+      "option": "legume blister beetle",
+      "p": 0.01734
+     },
+     {
+      "option": "english grain aphid",
+      "p": 0.00628
+     },
+     {
+      "option": "Potosiabre vitarsis",
+      "p": 0.0059
+     },
+     {
+      "option": "wheat blossom midge",
+      "p": 0.00347
+     },
+     {
+      "option": "Toxoptera citricidus",
+      "p": 0.00301
+     },
+     {
+      "option": "alfalfa plant bug",
+      "p": 0.00283
+     },
+     {
+      "option": "wheat phloeothrips",
+      "p": 0.00189
+     },
+     {
+      "option": "rice leaf roller",
+      "p": 0.00164
+     },
+     {
+      "option": "alfalfa weevil",
+      "p": 0.00156
+     },
+     {
+      "option": "grain spreader thrips",
+      "p": 0.00132
+     },
+     {
+      "option": "yellow cutworm",
+      "p": 0.00116
+     },
+     {
+      "option": "Ceroplastes rubens",
+      "p": 0.00111
+     },
+     {
+      "option": "Thrips",
+      "p": 0.00109
+     },
+     {
+      "option": "brown plant hopper",
+      "p": 0.00092
+     },
+     {
+      "option": "Dacus dorsalis(Hendel)",
+      "p": 0.00081
+     },
+     {
+      "option": "Phyllocoptes oleiverus ashmead",
+      "p": 0.00066
+     },
+     {
+      "option": "Toxoptera aurantii",
+      "p": 0.00065
+     },
+     {
+      "option": "Ampelophaga",
+      "p": 0.0006
+     },
+     {
+      "option": "lytta polita",
+      "p": 0.00056
+     },
+     {
+      "option": "Miridae",
+      "p": 0.00037
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 1860,
+      "cls": "wheat phloeothrips",
+      "img": "img/ev_u_1860.jpg"
+     },
+     {
+      "sid": 1501,
+      "cls": "lytta polita",
+      "img": "img/ev_u_1501.jpg"
+     },
+     {
+      "sid": 1135,
+      "cls": "brown plant hopper",
+      "img": "img/ev_u_1135.jpg"
+     },
+     {
+      "sid": 1826,
+      "cls": "wheat blossom midge",
+      "img": "img/ev_u_1826.jpg"
+     },
+     {
+      "sid": 1025,
+      "cls": "alfalfa weevil",
+      "img": "img/ev_u_1025.jpg"
+     },
+     {
+      "sid": 1967,
+      "cls": "yellow cutworm",
+      "img": "img/ev_u_1967.jpg"
+     },
+     {
+      "sid": 1240,
+      "cls": "english grain aphid",
+      "img": "img/ev_u_1240.jpg"
+     },
+     {
+      "sid": 1670,
+      "cls": "rice leaf roller",
+      "img": "img/ev_u_1670.jpg"
+     },
+     {
+      "sid": 1326,
+      "cls": "grain spreader thrips",
+      "img": "img/ev_u_1326.jpg"
+     },
+     {
+      "sid": 1383,
+      "cls": "legume blister beetle",
+      "img": "img/ev_u_1383.jpg"
+     }
+    ],
+    "steps": [],
+    "shortlist": null,
+    "n_images_in_prompt": 11,
+    "prompt_tokens": 1928,
+    "latency_s": 6.161,
+    "calls": 1,
+    "mem_bytes": 123267,
+    "physical_gpu": "0"
+   },
+   "D12": {
+    "pred": "Ampelophaga",
+    "known_score": 0.72664,
+    "probs": [
+     {
+      "option": "Ampelophaga",
+      "p": 0.69806
+     },
+     {
+      "option": "UNKNOWN",
+      "p": 0.27336
+     },
+     {
+      "option": "yellow cutworm",
+      "p": 0.02244
+     },
+     {
+      "option": "alfalfa plant bug",
+      "p": 0.00613
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 1967,
+      "cls": "yellow cutworm",
+      "img": "img/ev_d_1967.jpg"
+     },
+     {
+      "sid": 1952,
+      "cls": "yellow cutworm",
+      "img": "img/ev_d_1952.jpg"
+     },
+     {
+      "sid": 1979,
+      "cls": "yellow cutworm",
+      "img": "img/ev_d_1979.jpg"
+     },
+     {
+      "sid": 30,
+      "cls": "Ampelophaga",
+      "img": "img/ev_d_30.jpg"
+     },
+     {
+      "sid": 0,
+      "cls": "Ampelophaga",
+      "img": "img/ev_d_0.jpg"
+     },
+     {
+      "sid": 910,
+      "cls": "alfalfa plant bug",
+      "img": "img/ev_d_910.jpg"
+     },
+     {
+      "sid": 944,
+      "cls": "alfalfa plant bug",
+      "img": "img/ev_d_944.jpg"
+     }
+    ],
+    "steps": [
+     {
+      "tool": "retrieve_shortlist(index)",
+      "out": [
+       "yellow cutworm",
+       "Ampelophaga",
+       "alfalfa plant bug"
+      ],
+      "rank": [
+       "Ampelophaga",
+       "yellow cutworm",
+       "alfalfa plant bug"
+      ]
+     }
+    ],
+    "shortlist": [
+     "yellow cutworm",
+     "Ampelophaga",
+     "alfalfa plant bug"
+    ],
+    "n_images_in_prompt": 8,
+    "prompt_tokens": 925,
+    "latency_s": 3.578,
+    "calls": 1,
+    "mem_bytes": 128316,
+    "physical_gpu": "0"
+   }
+  },
+  {
+   "case": "B",
+   "query_id": "ageval_ip102:340",
+   "group": 340,
+   "query_img": "img/query_340.jpg",
+   "eval_only": {
+    "gold": "Miridae",
+    "gold_in_D12_shortlist": true,
+    "gold_in_B2_evidence": false,
+    "D12_correct": true,
+    "B2_correct": true
+   },
+   "B2": {
+    "pred": "Miridae",
+    "known_score": 0.9068,
+    "probs": [
+     {
+      "option": "Miridae",
+      "p": 0.12347
+     },
+     {
+      "option": "UNKNOWN",
+      "p": 0.0932
+     },
+     {
+      "option": "Ampelophaga",
+      "p": 0.08755
+     },
+     {
+      "option": "Thrips",
+      "p": 0.08354
+     },
+     {
+      "option": "Toxoptera citricidus",
+      "p": 0.07726
+     },
+     {
+      "option": "Potosiabre vitarsis",
+      "p": 0.07258
+     },
+     {
+      "option": "lytta polita",
+      "p": 0.06818
+     },
+     {
+      "option": "wheat phloeothrips",
+      "p": 0.05924
+     },
+     {
+      "option": "brown plant hopper",
+      "p": 0.05565
+     },
+     {
+      "option": "legume blister beetle",
+      "p": 0.05067
+     },
+     {
+      "option": "rice leaf roller",
+      "p": 0.04267
+     },
+     {
+      "option": "grain spreader thrips",
+      "p": 0.04136
+     },
+     {
+      "option": "wheat blossom midge",
+      "p": 0.02933
+     },
+     {
+      "option": "Toxoptera aurantii",
+      "p": 0.02179
+     },
+     {
+      "option": "yellow cutworm",
+      "p": 0.01893
+     },
+     {
+      "option": "alfalfa plant bug",
+      "p": 0.01893
+     },
+     {
+      "option": "Dacus dorsalis(Hendel)",
+      "p": 0.01864
+     },
+     {
+      "option": "alfalfa weevil",
+      "p": 0.01521
+     },
+     {
+      "option": "english grain aphid",
+      "p": 0.00967
+     },
+     {
+      "option": "Phyllocoptes oleiverus ashmead",
+      "p": 0.00802
+     },
+     {
+      "option": "Ceroplastes rubens",
+      "p": 0.00409
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 1860,
+      "cls": "wheat phloeothrips",
+      "img": "img/ev_u_1860.jpg"
+     },
+     {
+      "sid": 1501,
+      "cls": "lytta polita",
+      "img": "img/ev_u_1501.jpg"
+     },
+     {
+      "sid": 1135,
+      "cls": "brown plant hopper",
+      "img": "img/ev_u_1135.jpg"
+     },
+     {
+      "sid": 1826,
+      "cls": "wheat blossom midge",
+      "img": "img/ev_u_1826.jpg"
+     },
+     {
+      "sid": 1025,
+      "cls": "alfalfa weevil",
+      "img": "img/ev_u_1025.jpg"
+     },
+     {
+      "sid": 1967,
+      "cls": "yellow cutworm",
+      "img": "img/ev_u_1967.jpg"
+     },
+     {
+      "sid": 1240,
+      "cls": "english grain aphid",
+      "img": "img/ev_u_1240.jpg"
+     },
+     {
+      "sid": 1670,
+      "cls": "rice leaf roller",
+      "img": "img/ev_u_1670.jpg"
+     },
+     {
+      "sid": 1326,
+      "cls": "grain spreader thrips",
+      "img": "img/ev_u_1326.jpg"
+     },
+     {
+      "sid": 1383,
+      "cls": "legume blister beetle",
+      "img": "img/ev_u_1383.jpg"
+     }
+    ],
+    "steps": [],
+    "shortlist": null,
+    "n_images_in_prompt": 11,
+    "prompt_tokens": 1928,
+    "latency_s": 6.175,
+    "calls": 1,
+    "mem_bytes": 123267,
+    "physical_gpu": "0"
+   },
+   "D12": {
+    "pred": "Miridae",
+    "known_score": 0.87234,
+    "probs": [
+     {
+      "option": "Miridae",
+      "p": 0.7943
+     },
+     {
+      "option": "UNKNOWN",
+      "p": 0.12766
+     },
+     {
+      "option": "alfalfa plant bug",
+      "p": 0.0705
+     },
+     {
+      "option": "alfalfa weevil",
+      "p": 0.00755
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 324,
+      "cls": "Miridae",
+      "img": "img/ev_d_324.jpg"
+     },
+     {
+      "sid": 361,
+      "cls": "Miridae",
+      "img": "img/ev_d_361.jpg"
+     },
+     {
+      "sid": 1025,
+      "cls": "alfalfa weevil",
+      "img": "img/ev_d_1025.jpg"
+     },
+     {
+      "sid": 1010,
+      "cls": "alfalfa weevil",
+      "img": "img/ev_d_1010.jpg"
+     },
+     {
+      "sid": 910,
+      "cls": "alfalfa plant bug",
+      "img": "img/ev_d_910.jpg"
+     },
+     {
+      "sid": 944,
+      "cls": "alfalfa plant bug",
+      "img": "img/ev_d_944.jpg"
+     }
+    ],
+    "steps": [
+     {
+      "tool": "retrieve_shortlist(index)",
+      "out": [
+       "Miridae",
+       "alfalfa weevil",
+       "alfalfa plant bug"
+      ],
+      "rank": [
+       "Miridae",
+       "alfalfa plant bug",
+       "alfalfa weevil"
+      ]
+     }
+    ],
+    "shortlist": [
+     "Miridae",
+     "alfalfa weevil",
+     "alfalfa plant bug"
+    ],
+    "n_images_in_prompt": 7,
+    "prompt_tokens": 891,
+    "latency_s": 4.295,
+    "calls": 1,
+    "mem_bytes": 128316,
+    "physical_gpu": "0"
+   }
+  },
+  {
+   "case": "C",
+   "query_id": "ageval_ip102:1203",
+   "group": 1203,
+   "query_img": "img/query_1203.jpg",
+   "eval_only": {
+    "gold": "english grain aphid",
+    "gold_in_D12_shortlist": false,
+    "gold_in_B2_evidence": true,
+    "D12_correct": false,
+    "B2_correct": true
+   },
+   "B2": {
+    "pred": "english grain aphid",
+    "known_score": 0.91224,
+    "probs": [
+     {
+      "option": "english grain aphid",
+      "p": 0.78221
+     },
+     {
+      "option": "UNKNOWN",
+      "p": 0.08776
+     },
+     {
+      "option": "Toxoptera citricidus",
+      "p": 0.03658
+     },
+     {
+      "option": "wheat phloeothrips",
+      "p": 0.02052
+     },
+     {
+      "option": "yellow cutworm",
+      "p": 0.01245
+     },
+     {
+      "option": "brown plant hopper",
+      "p": 0.0094
+     },
+     {
+      "option": "lytta polita",
+      "p": 0.00829
+     },
+     {
+      "option": "alfalfa weevil",
+      "p": 0.00779
+     },
+     {
+      "option": "Thrips",
+      "p": 0.00519
+     },
+     {
+      "option": "Dacus dorsalis(Hendel)",
+      "p": 0.0048
+     },
+     {
+      "option": "Ceroplastes rubens",
+      "p": 0.0041
+     },
+     {
+      "option": "legume blister beetle",
+      "p": 0.00386
+     },
+     {
+      "option": "wheat blossom midge",
+      "p": 0.00357
+     },
+     {
+      "option": "Toxoptera aurantii",
+      "p": 0.00351
+     },
+     {
+      "option": "Phyllocoptes oleiverus ashmead",
+      "p": 0.0022
+     },
+     {
+      "option": "Potosiabre vitarsis",
+      "p": 0.00213
+     },
+     {
+      "option": "alfalfa plant bug",
+      "p": 0.00149
+     },
+     {
+      "option": "Miridae",
+      "p": 0.00131
+     },
+     {
+      "option": "rice leaf roller",
+      "p": 0.00127
+     },
+     {
+      "option": "Ampelophaga",
+      "p": 0.00092
+     },
+     {
+      "option": "grain spreader thrips",
+      "p": 0.00066
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 1860,
+      "cls": "wheat phloeothrips",
+      "img": "img/ev_u_1860.jpg"
+     },
+     {
+      "sid": 1501,
+      "cls": "lytta polita",
+      "img": "img/ev_u_1501.jpg"
+     },
+     {
+      "sid": 1135,
+      "cls": "brown plant hopper",
+      "img": "img/ev_u_1135.jpg"
+     },
+     {
+      "sid": 1826,
+      "cls": "wheat blossom midge",
+      "img": "img/ev_u_1826.jpg"
+     },
+     {
+      "sid": 1025,
+      "cls": "alfalfa weevil",
+      "img": "img/ev_u_1025.jpg"
+     },
+     {
+      "sid": 1967,
+      "cls": "yellow cutworm",
+      "img": "img/ev_u_1967.jpg"
+     },
+     {
+      "sid": 1240,
+      "cls": "english grain aphid",
+      "img": "img/ev_u_1240.jpg"
+     },
+     {
+      "sid": 1670,
+      "cls": "rice leaf roller",
+      "img": "img/ev_u_1670.jpg"
+     },
+     {
+      "sid": 1326,
+      "cls": "grain spreader thrips",
+      "img": "img/ev_u_1326.jpg"
+     },
+     {
+      "sid": 1383,
+      "cls": "legume blister beetle",
+      "img": "img/ev_u_1383.jpg"
+     }
+    ],
+    "steps": [],
+    "shortlist": null,
+    "n_images_in_prompt": 11,
+    "prompt_tokens": 1928,
+    "latency_s": 6.147,
+    "calls": 1,
+    "mem_bytes": 123267,
+    "physical_gpu": "0"
+   },
+   "D12": {
+    "pred": "Toxoptera citricidus",
+    "known_score": 0.81211,
+    "probs": [
+     {
+      "option": "Toxoptera citricidus",
+      "p": 0.62576
+     },
+     {
+      "option": "UNKNOWN",
+      "p": 0.18789
+     },
+     {
+      "option": "Toxoptera aurantii",
+      "p": 0.17377
+     },
+     {
+      "option": "rice leaf roller",
+      "p": 0.01259
+     }
+    ],
+    "evidence": [
+     {
+      "sid": 782,
+      "cls": "Toxoptera aurantii",
+      "img": "img/ev_d_782.jpg"
+     },
+     {
+      "sid": 735,
+      "cls": "Toxoptera aurantii",
+      "img": "img/ev_d_735.jpg"
+     },
+     {
+      "sid": 859,
+      "cls": "Toxoptera citricidus",
+      "img": "img/ev_d_859.jpg"
+     },
+     {
+      "sid": 873,
+      "cls": "Toxoptera citricidus",
+      "img": "img/ev_d_873.jpg"
+     },
+     {
+      "sid": 1670,
+      "cls": "rice leaf roller",
+      "img": "img/ev_d_1670.jpg"
+     },
+     {
+      "sid": 1664,
+      "cls": "rice leaf roller",
+      "img": "img/ev_d_1664.jpg"
+     },
+     {
+      "sid": 1611,
+      "cls": "rice leaf roller",
+      "img": "img/ev_d_1611.jpg"
+     }
+    ],
+    "steps": [
+     {
+      "tool": "retrieve_shortlist(index)",
+      "out": [
+       "Toxoptera aurantii",
+       "Toxoptera citricidus",
+       "rice leaf roller"
+      ],
+      "rank": [
+       "Toxoptera aurantii",
+       "Toxoptera citricidus",
+       "rice leaf roller"
+      ]
+     }
+    ],
+    "shortlist": [
+     "Toxoptera aurantii",
+     "Toxoptera citricidus",
+     "rice leaf roller"
+    ],
+    "n_images_in_prompt": 8,
+    "prompt_tokens": 925,
+    "latency_s": 3.595,
+    "calls": 1,
+    "mem_bytes": 128316,
+    "physical_gpu": "0"
+   }
+  }
+ ],
+ "aggregate": {
+  "order42": {
+   "diff_pts": 25.0,
+   "ci": [
+    16.7,
+    33.3
+   ],
+   "p_holm": 0.008,
+   "n_groups": 60
+  }
+ },
+ "source_files": [
+  "predictions/r5fresh/ageval_ip102_s42_fresh.jsonl",
+  "predictions/r5fresh/memory_ageval_ip102_s42_fresh.jsonl",
+  "predictions/r5fresh/memstate_ageval_ip102_s42_fresh_t0.pkl",
+  "predictions/r5fresh/memstate_ageval_ip102_s42_fresh_t1.pkl",
+  "predictions/r5fresh/memstate_ageval_ip102_s42_fresh_t2.pkl",
+  "CLOVE_Bench20/protocol/manifest_ageval_ip102.json"
+ ],
+ "sha256_predictions": "b06dd8f619262c69b299b74e10cafca0c28d21f33b3c50dab56ed8e9564ee14d"
+}
